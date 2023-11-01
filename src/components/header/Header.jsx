@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
 import './header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const links = [
   {
@@ -31,14 +29,15 @@ const links = [
 ];
 
 function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="header">
       <div className="logo">
-        <img src=".src/assets/XOBO-LOGO-HEADER.png" alt="Your Logo" />
+      <Link to ="/">
+        <img src={process.env.PUBLIC_URL + '/XDL-LOGO.png'} alt="XDL Logo" />
+        </Link> 
       </div>
-      <nav className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
+      <nav>
         {links.map((link) => (
           <ul key={link.link}>
             <li>
@@ -48,10 +47,7 @@ function Header() {
         ))}
         <ul>
           <li>
-            <button
-              className={`action-button ${mobileMenuOpen ? 'active' : ''}`}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
+            <button>
               Transport Login
             </button>
           </li>
