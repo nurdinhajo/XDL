@@ -1,0 +1,93 @@
+/* Google Font CDN */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Header container */
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 2px;
+ background-color: #fff;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+ transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.header{
+ position: sticky;
+ top: 0; /* Adjust as needed */
+ z-index: 100; /* Ensures the header appears on top of other content */
+}
+
+/* Logo */
+.logo img {
+ max-width: 100px; /* Adjust the logo size as needed */
+}
+
+/* Navigation links */
+nav {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin: 0 15px;
+ padding: 0;
+ margin: 0;
+}
+
+nav ul li {
+ list-style: none;
+}
+
+nav a {
+ color: #16234d; /* Set the text color for navigation links */
+ text-decoration: none;
+}
+
+/* Button */
+button {
+ background-color: #16234d; /* Set the button background color */
+ color: #fff; /* Set the text color for the button */
+ padding: 15px 20px;
+ /* margin-left: 20px; */
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transitions */
+}
+
+/* Hover effect for the button */
+button:hover {
+ background-color: #1c2e5a;
+ transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+ .header {
+   flex-direction: column; /* Stack elements vertically on smaller screens */
+   padding: 10px;
+ }
+
+ .logo {
+   margin-bottom: 10px;
+ }
+
+ nav {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ nav a {
+   margin: 10px 0; /* Add spacing between navigation links */
+ }
+
+ /* Mobile menu button styles */
+ button {
+   margin-left: 0;
+ }
+
+ /* Add an underline to active link (optional) */
+ nav a:hover {
+   text-decoration: underline;
+ }
+}
