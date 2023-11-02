@@ -1,8 +1,9 @@
 import React from 'react'
+import './faq.css'
 
 function FAQ() {
   return (
-    <div>FAQ</div>
+    <div className='faq'>FAQ</div>
   )
 }
 

@@ -24,7 +24,7 @@ const links = [
   },
   {
     name: 'FAQS',
-    link: '/faqs',
+    link: '/faq',
   },
 ];
 
@@ -47,9 +47,11 @@ function Header() {
         ))}
         <ul>
           <li>
-            <button>
-              Transport Login
-            </button>
+              <a href="http://18.130.30.102/xobo">
+              <button>
+                Transport Login
+              </button>
+            </a>
           </li>
         </ul>
       </nav>
