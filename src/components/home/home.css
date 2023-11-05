@@ -1,10 +1,63 @@
 *{
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.home{
-  background: #114cc1;
-  height: 84vh; /* Set a minimum height for the background color */
-  border: 2px solid red;
+.home {
+  background-color: #E9EBEF;
+  display: flex;
+  height: 84vh;
+  /* border: 2px solid red; */
+}
+
+.xdlIntro {
+  /* border: 2px solid green; */
+  flex: 1;
+  width: 50%;
+  padding-left: 30px; 
+  box-sizing: border-box;
+}
+
+.xdlIntro h1{
+  font-size: 80px;
+  color: #16234d;
+  font-weight: 650;
+}
+
+.xdlIntro h1 #middledot{
+  color: red;
+  font-size: 20vh;
+}
+
+.xdlIntro .description{
+  padding: 40px 0 60px 0;
+  width: 565px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+button {
+  
+  font-size: 15px;
+  background-color: #16234d; 
+  color: #fff; 
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ 
+
+.xdlVideo {
+  /* border: 2px solid red; */
+  flex: 1;
+  width: 50%;
+  padding: 20px; 
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.xdlVideo iframe{
+  border-radius: 38px;
 }

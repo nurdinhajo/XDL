@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const links = [
   {
     name: '',
-    link: '/',
+    link: '//',
   },
   {
     name: 'Services',
@@ -47,7 +47,7 @@ function Header() {
         ))}
         <ul>
           <li>
-              <a href="http://18.130.30.102/xobo">
+              <a href="http://18.130.30.102/xobo" target='blank'>
               <button>
                 Transport Login
               </button>

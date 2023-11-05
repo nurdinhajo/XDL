@@ -4,7 +4,6 @@
 
 *{
   font-weight: 600;
-  background-color: #ffff;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +23,7 @@ header {
   z-index: 100;
 }
 .header{
- border: 2px solid #16234d;
+ /* border: 2px solid #16234d; */
  position: fixed;
  top: 0;
  z-index: 100;
@@ -35,7 +34,7 @@ header {
  background-color: #ffff;
  width: 160px;
  height: 80px;
- padding: 0 0 0 10px;
+ padding: 0 0 0 30px;
  margin-bottom: -6px;
 }
 
