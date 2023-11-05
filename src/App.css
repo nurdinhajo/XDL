@@ -5,6 +5,11 @@
    font-family: Nunito;
    font-weight: 700;
   }
+
+  ::selection {
+    background-color: transparent;
+  }
+
   body{
     height: 150vh;
     margin-top: 85px;
