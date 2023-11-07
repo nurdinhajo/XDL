@@ -6,11 +6,11 @@
    font-weight: 700;
   }
 
-  ::selection {
+  /* ::selection {
     background-color: transparent;
-  }
+  } */
 
   body{
     height: 150vh;
-    margin-top: 85px;
+    margin-top: 84px;
   }

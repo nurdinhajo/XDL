@@ -1,116 +1,111 @@
-/* Header container */
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-*{
-  font-weight: 600;
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+  font-family: "Nunito";
 }
-
-
 
 header {
-  font-family: Nunito;
+  border: 2px solid blue;
+  padding: 5px -100px 0 0;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  background-color: #fff;
-  margin: 0;
-  position: fixed; 
+  background-color: #ffff;
+  position: fixed;
   top: 0;
   z-index: 100;
-}
-.header{
- /* border: 2px solid #16234d; */
- position: fixed;
- top: 0;
- z-index: 100;
+  justify-content: space-between; /* To push logo to the left and content to the right */
 }
 
-/* Logo */
 .logo img {
- background-color: #ffff;
- width: 160px;
- height: 80px;
- padding: 0 0 0 30px;
- margin-bottom: -6px;
+  width: 160px;
+  height: 80px;
 }
 
-/* Navigation links */
 nav {
-  background-color: #fff;
- display: flex;
- justify-content: space-around;
- align-items: center;
- margin: 0 15px;
- padding: 0 20px 0 0;
- margin: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0; /* Remove padding to center-align both button and links */
 }
 
 nav ul li {
- list-style: none;
- background-color: #fff;
-padding: 0 20px 0 0 ;
+  list-style: none;
+  padding: 0 20px 0 0;
 }
 
 nav a {
-  background-color: #fff;
-
- font-size: 16px;
- color: #16234d; /* Set the text color for navigation links */
- text-decoration: none;
+  font-size: 16px;
+  color: #16234d;
+  text-decoration: none;
 }
 
-nav a:hover{
- text-decoration: underline;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Button */
-button {
-  
- font-size: 15px;
- background-color: #16234d; /* Set the button background color */
- color: #fff; /* Set the text color for the button */
- padding: 15px 20px;
- /* margin-left: 20px; */
- border: none;
- border-radius: 5px;
- cursor: pointer;
+.orderBtn {
+  font-size: 15px;
+  background-color: #16234d;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-left: 0; Remove this line to center-align the button */
 }
 
-/* Hover effect for the button */
-/* button:hover {
-} */
+header .nav-btn {
+  padding: 0 15px 0 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #16234d;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
 
-/* Media query for smaller screens (e.g., mobile devices) */
-@media (max-width: 768px) {
- .header {
-   flex-direction: column; /* Stack elements vertically on smaller screens */
-   padding: 10px;
- }
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
 
- .logo {
-   margin-bottom: 10px;
- }
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align both the button and links */
+    justify-content: center; /* Center-align both the button and links */
+    gap: 1.5rem;
+    background-color: #E9EBEF;
+    transition: 1s;
+  }
 
- nav {
-   flex-direction: column;
-   align-items: center;
- }
+  .orderBtn {
+    padding: 15px 20px; /* Adjust the padding as needed */
+    font-size: 16px;
+  }
 
- nav a {
-   margin: 10px 0; /* Add spacing between navigation links */
- }
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
 
- /* Mobile menu button styles */
- button {
-   margin-left: 0;
- }
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 
- /* Add an underline to active link (optional) */
- nav a:hover {
-   text-decoration: underline;
- }
+  nav a {
+    font-size: 1.5rem;
+  }
 }
