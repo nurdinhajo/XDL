@@ -6,11 +6,11 @@ function Home() {
     <div className="home">
 
       <div className="xdlIntro">
-        <b><h1>
+        <b><h1 className='fast'>
           Fast <span id='middledot'>·</span> Reliable
         </h1></b>
 
-        <h3>
+        <h3 className='desc'>
           On-demand delivery platform
         </h3>
 
@@ -20,7 +20,7 @@ function Home() {
 
 
         <a href="http://18.130.30.102/xobo" target='blank'>
-          <button>
+          <button className='orderBtn'>
             Deliver Now
           </button>
         </a>
@@ -28,8 +28,7 @@ function Home() {
 
       <div className="xdlVideo">
       <iframe
-          width="620"
-          height="415"
+        
           src="https://www.youtube.com/embed/Oe0Tme-yRBU?si=1Y6TpTYw71Lano8J"
           title="YouTube video player"
           frameborder="0"

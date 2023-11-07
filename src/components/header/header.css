@@ -23,6 +23,9 @@ header {
   /* border: 2px solid red; */
   width: 160px;
   height: 80px;
+  visibility: visible; /* Show the logo initially */
+  opacity: 1; /* Show the logo initially */
+  transition: visibility 0.5s, opacity 0.5s; /* Smooth transition effect */
 }
 
 nav {
@@ -59,40 +62,53 @@ nav a:hover {
 }
 
 header .nav-btn {
-  padding: 0 15px 0 0;
+  padding: 0;
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
   background: transparent;
   border: none;
   outline: none;
-  color: #16234d;
-  visibility: hidden;
-  opacity: 0;
-  font-size: 1.8rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  header .nav-btn {
+
+  header{
+    visibility: visible;
+    opacity: 20;
+  }
+
+  .logo img {
     visibility: visible;
     opacity: 1;
   }
 
+  header .nav-btn {
+    visibility: visible;
+    color: #16234d;
+    padding: 0 15px 0 0;
+    opacity: 1;
+    font-size: 1.5rem;
+  }
+
   header nav {
     position: fixed;
-    top: -100vh;
+    top: 13vh;
     left: 0;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align both the button and links */
-    justify-content: center; /* Center-align both the button and links */
-    gap: 1.5rem;
+    align-items: center; 
+    /* justify-content: center;  */
+    padding: 5vw 0 0 0;
+    gap: 2rem;
     background-color: #E9EBEF;
     transition: 1s;
   }
 
   .orderBtn {
-    padding: 15px 20px; /* Adjust the padding as needed */
+    padding: 15px 20vw; /* Adjust the padding as needed */
     font-size: 16px;
   }
 
@@ -108,5 +124,11 @@ header .nav-btn {
 
   nav a {
     font-size: 1.5rem;
+  }
+
+  /* Hide the logo when the navigation bar is open */
+  header .nav-btn:focus ~ .logo img {
+    visibility: hidden;
+    opacity: 0;
   }
 }

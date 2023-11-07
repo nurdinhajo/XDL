@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+// import { FaTimes } from "react-icons/fa";
 import "./header.css";
 
 const navLinks = [
@@ -62,11 +63,11 @@ function Navbar() {
             </button>
           </a>
       
-				<button
+				{/* <button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
 					<FaTimes />
-				</button>
+				</button> */}
 
 			</nav>
 

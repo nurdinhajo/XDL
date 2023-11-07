@@ -6,7 +6,7 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 
 
-// import Home from './components/home/Home';
+import Home from './components/home/Home';
 import Services from './components/xdlservices/Services';
 import Drivers from './components/drivers/Drivers';
 import About from './components/about/About';
@@ -20,7 +20,7 @@ function App() {
         <Header/>
         {/* <h1>App</h1> */}
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/drivers" element={<Drivers />} />
           <Route path="/about" element={<About />} />
