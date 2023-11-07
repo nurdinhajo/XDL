@@ -39,11 +39,13 @@ function Navbar() {
 
 	return (
 		<header>
+
       <div className="logo">
       <Link to ="/">
         <img src={process.env.PUBLIC_URL + '/XDL-LOGO.png'} alt="XDL Logo" />
         </Link> 
       </div>
+
 			<nav ref={navRef}>
       {navLinks.map((link) => (
           <ul key={link.link}>
@@ -52,8 +54,7 @@ function Navbar() {
             </li>
             
           </ul>
-        ))}
-
+          ))}
       
           <a href="http://18.130.30.102/xobo" target='blank'>
             <button className="orderBtn">
@@ -66,12 +67,15 @@ function Navbar() {
 					onClick={showNavbar}>
 					<FaTimes />
 				</button>
+
 			</nav>
+
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
 				<FaBars />
 			</button>
+      
 		</header>
 	);
 }
