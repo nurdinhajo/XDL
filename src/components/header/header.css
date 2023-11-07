@@ -61,6 +61,10 @@ nav a:hover {
   /* margin-left: 0; Remove this line to center-align the button */
 }
 
+button:focus{
+  outline: 2px solid transparent;
+}
+
 header .nav-btn {
   padding: 0;
   cursor: pointer;
@@ -125,6 +129,8 @@ header .nav-btn {
   nav a {
     font-size: 1.5rem;
   }
+
+  
 
   /* Hide the logo when the navigation bar is open */
   header .nav-btn:focus ~ .logo img {
