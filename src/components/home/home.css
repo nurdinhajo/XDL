@@ -75,16 +75,16 @@ button {
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1024px) {
   .home {
-    flex-direction: column; /* Change to column layout for smaller screens */
-    min-height: auto; /* Remove the minimum height to adapt to content */
+    flex-direction: column;
+    min-height: auto;
   }
 
   .xdlIntro, .xdlVideo {
-    max-width: 80%; /* Set a maximum width within the provided width */
-    margin: 0 auto; /* Center-align within the provided width */
+    max-width: 80%;
+    margin: 0 auto;
     padding: 10px;
     text-align: center;
-    align-items: center; /* Align items to the center */
+    align-items: center;
   }
 
   .xdlIntro h1{
@@ -99,7 +99,7 @@ button {
 
   .xdlIntro h1, .xdlIntro .fast {
     font-size: 5vw;
-    text-align: center; /* Center-align the text on smaller screens */
+    text-align: center;
   }
 
   .xdlIntro h1 #middledot {

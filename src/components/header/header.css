@@ -98,7 +98,7 @@ header .nav-btn {
 
   header nav {
     position: fixed;
-    top: 13vh;
+    top: 10vh;
     left: 0;
     height: 100%;
     width: 100%;
@@ -126,7 +126,7 @@ header .nav-btn {
   }
     
   .orderBtn {
-    padding: 15px 20vw; /* Adjust the padding as needed */
+    padding: 15px 20vw;
     font-size: 16px;
   }
 
@@ -146,9 +146,9 @@ header .nav-btn {
 
   
 
-  /* Hide the logo when the navigation bar is open */
+  /* Unhide the logo when the navigation bar is open */
   header .nav-btn:focus ~ .logo img {
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
   }
 }
