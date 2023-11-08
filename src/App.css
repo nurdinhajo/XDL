@@ -4,6 +4,8 @@
   *{
    font-family: Nunito;
    font-weight: 700;
+   -webkit-tap-highlight-color: transparent;
+   outline: none !important;
   }
 
   /* ::selection {

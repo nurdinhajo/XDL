@@ -95,6 +95,7 @@ header .nav-btn {
     font-size: 1.5rem;
   }
 
+
   header nav {
     position: fixed;
     top: 13vh;
@@ -108,16 +109,29 @@ header .nav-btn {
     padding: 5vw 0 0 0;
     gap: 2rem;
     background-color: #E9EBEF;
-    transition: 1s;
+    transition: 1.5s;
   }
 
+  header .hidden {
+    transform: translateY(-100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  /* Show the navigation bar when the hamburger icon is clicked */
+  header .nav-btn:focus ~ nav.responsive_nav {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+    
   .orderBtn {
     padding: 15px 20vw; /* Adjust the padding as needed */
     font-size: 16px;
   }
 
   header .responsive_nav {
-    transform: translateY(100vh);
+    transform: translateY(1vh);
   }
 
   nav .nav-close-btn {

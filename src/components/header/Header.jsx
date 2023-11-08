@@ -1,7 +1,6 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link } from 'react-router-dom';
-import { FaBars } from "react-icons/fa";
-// import { FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
 
 const navLinks = [
@@ -19,7 +18,7 @@ const navLinks = [
   },
   {
     name: 'Contact',
-    link: '/contact', 
+    link: '/contact',
   },
   {
     name: 'FAQS',
@@ -27,58 +26,46 @@ const navLinks = [
   },
 ];
 
+function Header() {
+  const [isNavVisible, setIsNavVisible] = useState(false);
+  const navRef = useRef();
 
+  const toggleNavbar = () => {
+    setIsNavVisible(!isNavVisible);
+  };
 
-function Navbar() {
-	const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
-
-	return (
-		<header>
-
+  return (
+    <header>
       <div className="logo">
-      <Link to ="/">
-        <img src={process.env.PUBLIC_URL + '/XDL-LOGO.png'} alt="XDL Logo" />
-        </Link> 
+        <Link to="/">
+          <img src={process.env.PUBLIC_URL + '/XDL-LOGO.png'} alt="XDL Logo" />
+        </Link>
       </div>
 
-			<nav ref={navRef}>
-      {navLinks.map((link) => (
+      <nav className={isNavVisible ? "responsive_nav" : "hidden"}>
+        {navLinks.map((link) => (
           <ul key={link.link}>
             <li>
-              <a href={link.link}>{link.name}</a>              
+              <a href={link.link}>{link.name}</a>
             </li>
-            
           </ul>
-          ))}
-      
-          <a href="#">
-            <button className="orderBtn">
-              Transport Login
-            </button>
-          </a>
-      
-				{/* <button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button> */}
+        ))}
 
-			</nav>
+        <a href="#">
+          <button className="orderBtn">
+            Transport Login
+          </button>
+        </a>
+      </nav>
 
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-      
-		</header>
-	);
+      <button
+        className={`nav-btn ${isNavVisible ? "nav-close-btn" : ""}`}
+        onClick={toggleNavbar}
+      >
+        {isNavVisible ? <FaTimes /> : <FaBars />}
+      </button>
+    </header>
+  );
 }
 
-export default Navbar;
+export default Header;
