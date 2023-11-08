@@ -28,7 +28,6 @@ const navLinks = [
 
 function Header() {
   const [isNavVisible, setIsNavVisible] = useState(false);
-  const navRef = useRef();
 
   const toggleNavbar = () => {
     setIsNavVisible(!isNavVisible);
