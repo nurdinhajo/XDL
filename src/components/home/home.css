@@ -193,6 +193,11 @@ button {
     font-size: 10vw;
   }
 
+  .xdlIntro h3.desc {
+    font-size: 4.5vw;
+    word-spacing: -0.5vw;
+  }
+
   .xdlClient {
     flex-direction: column; /* Change to a column layout on smaller screens */
     padding: 10px;
