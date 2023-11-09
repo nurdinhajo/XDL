@@ -6,7 +6,7 @@
   font-family: "Nunito";
 }
 
-.home {
+.xdlLandingPage {
   background-color: #E9EBEF;
   display: flex;
   flex-direction: row;
@@ -41,7 +41,7 @@
 .xdlIntro .description {
   padding: 40px 0 60px 0;
   max-width: 565px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 35px;
   text-align: left;
 }
@@ -72,9 +72,68 @@ button {
   border-radius: 38px;
 }
 
+/* "xdlLandingPage" */
+
+
+/* !!Target This Styles Only!! */
+.xdlClient {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.xdlClient .xdlClientImg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 0 0 20px 20px;
+  box-sizing: border-box;
+}
+
+.xdlClientImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 45%;
+}
+
+.xdlClientImg img {
+  height: 45vw;
+  width: 35vw;
+  padding: 0 0 0 30px;
+}
+
+.xdlBenefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center; /* Center the content horizontally */
+  text-align: center; /* Center-align text */
+}
+
+.xdlBenefit h3 {
+  font-size: 1.5vw;
+}
+
+.xdlBenefit a {
+  display: flex;
+  align-items: center; /* Center the icon vertically */
+  justify-content: center; /* Center the icon horizontally */
+  text-decoration: none;
+  color: #16234d;
+}
+
+.xdlBenefit a p {
+  margin-left: 10px; /* Add some spacing between the text and the icon */
+}
+
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1024px) {
-  .home {
+  .xdlLandingPage {
     flex-direction: column;
     min-height: auto;
   }
@@ -122,4 +181,37 @@ button {
   .xdlIntro, .xdlVideo {
     order: 1; /* Reorder .xdlIntro to appear on top of .xdlVideo */
   }
+
+  .xdlIntro h1.fast {
+    font-size: 10vw; 
+    width: 80vw;
+    height: 15vw;
+  }
+
+  .xdlIntro h1 #middledot {
+    color: red;
+    font-size: 10vw;
+  }
+
+  .xdlClient {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    padding: 10px;
+  }
+
+  .xdlClient .xdlClientImg {
+    max-width: 100%; /* Make the image take full width */
+    align-items: center; /* Center-align the content */
+  }
+
+  .xdlClientImg {
+    max-width: 100%; /* Make the image take full width */
+    padding: 0; /* Remove left padding */
+  }
+
+  .xdlClientImg img {
+    width: 100%; /* Make the image take full width */
+    height: auto; /* Maintain aspect ratio */
+    padding: 0; /* Remove left padding */
+  }
+
 }

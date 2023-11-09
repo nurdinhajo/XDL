@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
@@ -37,7 +37,7 @@ function Header() {
     <header>
       <div className="logo">
         <Link to="/">
-          <img src={process.env.PUBLIC_URL + '/XDL-LOGO.png'} alt="XDL Logo" />
+          <img src={process.env.PUBLIC_URL + '/XDL-LOGO.png'} alt="XOBO Logo" />
         </Link>
       </div>
 
@@ -50,7 +50,7 @@ function Header() {
           </ul>
         ))}
 
-        <a href="#">
+        <a href="http://18.130.30.102/xobo">
           <button className="orderBtn">
             Transport Login
           </button>
