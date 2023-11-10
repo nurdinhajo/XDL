@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import"./home.css"
-
 function Home() {
   return (
     <div className="Home">
@@ -42,10 +41,26 @@ function Home() {
 
       <div className="xdlClient">
         <div className="xdlClientImg">
-        <img src={process.env.PUBLIC_URL + '/XDL-CLIENT.png'} alt="XOBO Client" />
+          <img src={process.env.PUBLIC_URL + '/XDL-CLIENT.png'} alt="XOBO Client" />
+
+          {/* <div className="xdlbenefit">
+            <h2>
+              Seamlessly streamline your orders.
+            </h2>
+
+            <h3>
+              Wave goodbye to long customer and driver chats. Free more time to grow your business.
+            </h3>
+              
+            <Link to="/services">
+              <p>
+                Learn more <FaArrowRight/>
+              </p>
+            </Link>    
+          </div> */}
         </div>
 
-        <div className="xdlBenefit">
+        <div className="xdlBenefit1">
             <h2>
             Seamlessly streamline your orders.
             </h2>
@@ -56,7 +71,10 @@ function Home() {
             
             <Link to="/services">
               <p>
-                Learn more <FaArrowRight/>
+                Learn more 
+                <span className="rightArrow">
+                  <FaArrowRight/>
+                </span>
               </p>
             </Link>           
         </div>

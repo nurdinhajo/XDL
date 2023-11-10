@@ -109,28 +109,32 @@ button {
   padding: 0 0 0 30px;
 }
 
-.xdlBenefit {
+.xdlBenefit h2 h3 p{
+  display: none;
+  visibility: hidden;
+}
+.xdlBenefit1 {
   display: flex;
   flex-direction: column;
   justify-content: center;  
-  align-items: center; /* Center the content horizontally */
-  text-align: center; /* Center-align text */
+  align-items: center; 
+  text-align: center; 
 }
 
-.xdlBenefit h3 {
+.xdlBenefit1 h3 {
   font-size: 1.5vw;
 }
 
-.xdlBenefit a {
+.xdlBenefit1 a {
   display: flex;
-  align-items: center; /* Center the icon vertically */
-  justify-content: center; /* Center the icon horizontally */
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #16234d;
 }
 
-.xdlBenefit a p {
-  margin-left: 10px; /* Add some spacing between the text and the icon */
+.xdlBenefit1 a p {
+  margin-left: 10px;
 }
 
 /* Media Queries for Responsiveness */
@@ -212,7 +216,9 @@ button {
 
   .xdlClientImg {
     max-width: 100%; /* Make the image take full width */
-    padding: 0; /* Remove left padding */
+    padding: 0; 
+    margin: 0;
+
   }
 
   .xdlClientImg img {
