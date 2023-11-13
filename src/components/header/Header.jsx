@@ -37,7 +37,7 @@ function Header() {
     <header>
       <div className="logo">
         <Link to="/">
-          <img src={process.env.PUBLIC_URL + '/Header-Logo.jpeg'} alt="XOBO Logo" />
+          <img src={process.env.PUBLIC_URL + '/Header-Logo2.jpeg'} alt="XOBO Logo" />
         </Link>
       </div>
 
