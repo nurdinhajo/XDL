@@ -172,9 +172,14 @@ button {
   margin-bottom: 20px;
 }
 
+.xdlDelivered{
+  justify-content: center;
+  align-items: center;
+}
+
 .xdlDelivered img {
-  width: 100%;
-  height: auto;
+  width: 70%;
+  height: 80%;
 }
 
 .grow .xdlBenefits-1,
@@ -184,6 +189,13 @@ button {
   display: flex;
   align-items: center;
   padding: 20px 0;
+}
+
+.grow .xdlBenefits-1 p,
+.grow .xdlBenefits-2 p,
+.grow .xdlBenefits-3 p,
+.grow .xdlBenefits-4 p {
+  font-weight: 400;
 }
 
 .benefit-icon {
