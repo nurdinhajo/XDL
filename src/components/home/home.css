@@ -6,6 +6,8 @@
   font-family: "Nunito";
 }
 
+/*  !! FAST · RELIABLE !!*/
+
 .xdlLandingPage {
   background-color: #E9EBEF;
   display: flex;
@@ -74,15 +76,16 @@ button {
   border-radius: 38px;
 }
 
-/* "xdlLandingPage" */
+/*  ?? FAST · RELIABLE ??*/
 
 
-/* !!Target This Styles Only!! */
+/*  !! XDL-CLIENT !!*/
 .xdlClient {
   background-color: #ffff;
   display: flex;
   flex-direction: row;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .xdlClient .xdlClientImg {
@@ -94,48 +97,119 @@ button {
   box-sizing: border-box;
 }
 
-.xdlClientImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 45%;
-}
-
 .xdlClientImg img {
   height: 35vw;
   width: 30vw;
-  padding: 0 0 0 30px;
+  padding: 20px;
 }
 
-.xdlBenefit h2 h3 p{
+.xdlClientDesc {
   display: none;
   visibility: hidden;
 }
-.xdlBenefit1 {
+
+.xdlBenefit {
+  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
-  justify-content: center;  
-  align-items: center; 
-  text-align: center; 
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: left;
+  padding: 0 10vw 0 0;
 }
 
-.xdlBenefit1 h3 {
-  font-size: 1.5vw;
-}
-
-.xdlBenefit1 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+.xdlBenefit h2 {
+  padding: 5vw 8vw 8vw 0;
   color: #16234d;
 }
 
-.xdlBenefit1 a p {
-  margin-left: 10px;
+.xdlBenefit h3 {
+  padding: 0 0 8vw 0;
+  width: 70%;
+  font-weight: 300;
 }
+
+.xdlBenefit a {
+  display: flex;
+  padding: 10vw 10vw 0 0;
+  text-decoration: none;
+  color: black;
+}
+
+.xdlBenefit a p {
+  padding: 0 5px 15px 0;
+  font-size: 25px;
+}
+
+.xdlBenefit .rightArrow {
+  position: absolute;
+  padding-top: 2.5px;
+  padding-left: 10px;
+}
+
+/*  ?? XDL-CLIENT??*/
+
+/* !! Grow your business with XOBO !! */
+
+.grow {
+  display: flex;
+  flex-direction: row;
+  background-color: #EFE6E6;
+  padding: 30px 0;
+}
+
+.xdlBusiness,
+.xdlDelivered {
+  display: flex;
+  flex-direction: column; /* Change to a column layout */
+  align-items: center;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.xdlBusiness h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.xdlDelivered img {
+  width: 100%;
+  height: auto;
+}
+
+.grow .xdlBenefits-1,
+.grow .xdlBenefits-2,
+.grow .xdlBenefits-3,
+.grow .xdlBenefits-4 {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.benefit-icon {
+  margin-right: 16px;
+}
+
+.benefit-icon img {
+  width: 60px;
+}
+
+#track {
+  height: 80px;
+  width: 50px;
+}
+
+.benefit-content {
+  flex: 1;
+  text-align: left;
+}
+
+.benefit-content h3 {
+  font-size: 2vw;
+  color: #16234d;
+}
+
+/* ?? Grow your business with XOBO ?? */
 
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1024px) {
@@ -144,7 +218,7 @@ button {
     min-height: auto;
   }
 
-  .xdlIntro, .xdlVideo {
+  .xdlIntro, .xdlVideo, .xdlClient {
     max-width: 80%;
     margin: 0 auto;
     padding: 10px;
@@ -152,11 +226,11 @@ button {
     align-items: center;
   }
 
-  .xdlIntro h1{
+  .xdlIntro h1 {
     font-size: 200vw;
   }
 
-  .xdlVideo iframe{
+  .xdlVideo iframe {
     width: 90vw;
     height: 60vw;
     padding: 2vw 0 0 0;
@@ -173,23 +247,24 @@ button {
 
   .xdlIntro h3.desc {
     font-size: 3vw;
+    text-align: left;
   }
 
   .xdlIntro .description {
     max-width: 100%;
-    text-align: center; /* Center-align the text on smaller screens */
+    text-align: left; /* Center-align the text on smaller screens */
   }
 
   button {
     font-size: 12px;
   }
 
-  .xdlIntro, .xdlVideo {
-    order: 1; /* Reorder .xdlIntro to appear on top of .xdlVideo */
+  .xdlIntro, .xdlVideo, .xdlClient {
+    order: 1; /* Reorder .xdlIntro, .xdlVideo, and .xdlClient to appear on top */
   }
 
   .xdlIntro h1.fast {
-    font-size: 10vw; 
+    font-size: 10vw;
     width: 80vw;
     height: 15vw;
   }
@@ -202,7 +277,9 @@ button {
   .xdlIntro h3.desc {
     font-size: 4.5vw;
     word-spacing: -0.5vw;
+    text-align: left;
   }
+
 
   .xdlClient {
     flex-direction: column; /* Change to a column layout on smaller screens */
@@ -214,17 +291,124 @@ button {
     align-items: center; /* Center-align the content */
   }
 
-  .xdlClientImg {
-    max-width: 100%; /* Make the image take full width */
-    padding: 0; 
-    margin: 0;
-
-  }
-
   .xdlClientImg img {
     width: 100%; /* Make the image take full width */
     height: auto; /* Maintain aspect ratio */
     padding: 0; /* Remove left padding */
+  }
+
+  .xdlClientDesc {
+    display: block;
+    visibility: visible;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  .xdlClientDesc h2{
+    color: #16234d;
+    padding: 20px 0 40px 0;
+  }
+
+  .xdlClientDesc h3{
+    color: black;
+    font-weight: 200;
+    padding-bottom: 40px;
+  }
+
+  .xdlClientDesc p{
+    color: #16234d;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 2.5vw;
+  }
+
+  .xdlClient a{
+    text-decoration: none;
+  }
+
+  .xdlClient .rightArrow {
+    position: absolute;
+    padding-top: 4px;
+    padding-left: 10px;
+  }  
+
+  .xdlBenefit {
+    display: none;
+  }
+
+  .grow {
+    flex-direction: column;
+  }
+
+  .xdlBusiness,
+  .xdlDelivered {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .grow .xdlBenefits-1,
+  .grow .xdlBenefits-2,
+  .grow .xdlBenefits-3,
+  .grow .xdlBenefits-4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefit-icon {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .benefit-icon img {
+    width: 60px;
+  }
+
+  #track {
+    height: 80px;
+    width: 50px;
+  }
+
+  .benefit-content {
+    flex: 1;
+    text-align: center;
+  }
+
+  .grow .xdlBenefits-1,
+  .grow .xdlBenefits-2,
+  .grow .xdlBenefits-3,
+  .grow .xdlBenefits-4 {
+  padding: 0;
+  width: 70%;
+}
+
+  .grow .xdlBenefits-1 img {
+    order: -1; /* Move the img icon before h3 */
+  }
+
+  .grow .xdlBenefits-1 h3,
+  .grow .xdlBenefits-2 h3,
+  .grow .xdlBenefits-3 h3,
+  .grow .xdlBenefits-4 h3 {
+    font-size: 3.5vw;
+  }
+
+  .grow .xdlBenefits-1 p,
+  .grow .xdlBenefits-2 p,
+  .grow .xdlBenefits-3 p,
+  .grow .xdlBenefits-4 p {
+    text-align: left;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+
+  .xdlDelivered {
+    padding: 20px 90px;
+  }
+
+  .xdlDelivered img{
+    width: 100%;
+    height: 100%;
   }
 
 }

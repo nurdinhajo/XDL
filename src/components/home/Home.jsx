@@ -43,24 +43,28 @@ function Home() {
         <div className="xdlClientImg">
           <img src={process.env.PUBLIC_URL + '/XDL-CLIENT.png'} alt="XOBO Client" />
 
-          {/* <div className="xdlbenefit">
+          <div className="xdlClientDesc">
             <h2>
-              Seamlessly streamline your orders.
+            Seamlessly streamline your orders.
             </h2>
 
             <h3>
-              Wave goodbye to long customer and driver chats. Free more time to grow your business.
+            Wave goodbye to long customer and driver chats. Free more time to grow your business.
             </h3>
-              
+            
             <Link to="/services">
               <p>
-                Learn more <FaArrowRight/>
+                Learn more 
+                <span className="rightArrow">
+                  <FaArrowRight/>
+                </span>
               </p>
-            </Link>    
-          </div> */}
+            </Link>           
         </div>
 
-        <div className="xdlBenefit1">
+        </div>
+
+        <div className="xdlBenefit">
             <h2>
             Seamlessly streamline your orders.
             </h2>
@@ -80,8 +84,58 @@ function Home() {
         </div>
 
       </div>
-    </div>
-  )
-}
 
+      <div className="grow">
+        <div className="xdlBusiness">
+            <h1>Grow your business with XOBO</h1>
+
+          <div className="xdlBenefits-1">
+            <div className="benefit-icon">
+              <img src={process.env.PUBLIC_URL + '/ICONS/Fast.png'} alt="XOBO RELIABLE" />
+            </div>
+            <div className="benefit-content">
+              <h3>Fast & flexible delivery</h3>
+              <p>On-demand, same-day or advance orders. We're ready when you are and promise a fast service.</p>
+            </div>
+          </div>
+
+          <div className="xdlBenefits-2">
+            <div className="benefit-icon">
+              <img src={process.env.PUBLIC_URL + '/ICONS/Reduce.png'} alt="XOBO SAVING" />
+            </div>
+            <div className="benefit-content">
+              <h3>Reduce operational costs</h3>
+              <p>No need to manage your own delivery fleet. Outsource and simply pay for the deliveries you need.</p>
+            </div>
+          </div>
+
+          <div className="xdlBenefits-3">
+            <div className="benefit-icon">
+              <img id='track' src={process.env.PUBLIC_URL + '/ICONS/Track.png'} alt="XOBO TRACKING" />
+            </div>
+            <div className="benefit-content">
+              <h3>Real-time tracking</h3>
+              <p>In-app tracking allows you and the receiver to track your order in real time during the delivery.</p>
+            </div>
+          </div>
+
+          <div className="xdlBenefits-4">
+            <div className="benefit-icon">
+              <img  src={process.env.PUBLIC_URL + '/ICONS/Vehicles.png'} alt="XOBO VEHICLE" />
+            </div>
+            <div className="benefit-content">
+              <h3>Vast array of vehicles</h3>
+              <p>Different vehicles to suit any kind of business including trucks, vans, motorcycles and runners for deliveries of anything of any size.</p>
+            </div>
+          </div>       
+      </div>
+
+      <div className="xdlDelivered">
+        <img  src={process.env.PUBLIC_URL + '/XDL-DELIVERED.png'} alt="XOBO Client" />
+      </div>
+
+    </div>
+  
+  </div>
+  )}
 export default Home
