@@ -109,7 +109,6 @@ button {
 }
 
 .xdlBenefit {
-  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -156,12 +155,15 @@ button {
   flex-direction: row;
   background-color: #EFE6E6;
   padding: 30px 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .xdlBusiness,
 .xdlDelivered {
   display: flex;
-  flex-direction: column; /* Change to a column layout */
+  flex-direction: column;
   align-items: center;
   max-width: 50%;
   padding: 0 20px;
@@ -172,14 +174,14 @@ button {
   margin-bottom: 20px;
 }
 
-.xdlDelivered{
+.xdlDelivered {
   justify-content: center;
   align-items: center;
 }
 
 .xdlDelivered img {
-  width: 70%;
-  height: 80%;
+  width: 75%;
+  height: 90%;
 }
 
 .grow .xdlBenefits-1,
@@ -195,7 +197,7 @@ button {
 .grow .xdlBenefits-2 p,
 .grow .xdlBenefits-3 p,
 .grow .xdlBenefits-4 p {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .benefit-icon {
@@ -220,6 +222,8 @@ button {
   font-size: 2vw;
   color: #16234d;
 }
+
+
 
 /* ?? Grow your business with XOBO ?? */
 
@@ -359,6 +363,10 @@ button {
     padding: 0 10px;
   }
 
+  .xdlBusiness h1 {
+    font-size: 4.5vw;
+  }
+
   .grow .xdlBenefits-1,
   .grow .xdlBenefits-2,
   .grow .xdlBenefits-3,
@@ -376,16 +384,6 @@ button {
 
   .benefit-icon img {
     width: 60px;
-  }
-
-  #track {
-    height: 80px;
-    width: 50px;
-  }
-
-  .benefit-content {
-    flex: 1;
-    text-align: center;
   }
 
   .grow .xdlBenefits-1 img {
@@ -410,12 +408,41 @@ button {
     padding-top: 10px;
   }
 
-  .xdlDelivered {
-    padding: 20px 10px;
+  .xdlBusiness {
+    text-align: center;
   }
 
-  .xdlDelivered img {
-    width: 100%; 
-    height: auto; 
+  .xdlBusiness h1 {
+    font-size: 4.5vw;
+    margin-bottom: 20px;
+  }
+
+  .xdlBusiness .xdlBenefits-1,
+  .xdlBusiness .xdlBenefits-2,
+  .xdlBusiness .xdlBenefits-3,
+  .xdlBusiness .xdlBenefits-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .xdlBusiness .benefit-icon {
+    margin-bottom: 16px;
+  }
+
+  .xdlBusiness .benefit-icon img {
+    width: 60px;
+  }
+
+  #track {
+    height: 80px;
+    width: 50px;
+  }
+
+  .xdlBusiness .benefit-content {
+    flex: 1;
+    text-align: center;
   }
 }
