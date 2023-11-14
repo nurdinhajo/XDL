@@ -17,7 +17,7 @@ function Home() {
           </h3>
 
           <h3 className="description">
-            XOBO Delivery LTD offers immediate pick and delivery services. Customers can specify delivery preferences, track their packages in real-time, and benefit from flexible options.
+            XOBO Delivery Limited offers immediate pick and delivery services. Customers can specify delivery preferences, track their packages in real-time, and benefit from flexible options.
           </h3>
 
 
