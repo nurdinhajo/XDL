@@ -12,6 +12,7 @@ import Drivers from './components/drivers/Drivers';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import FAQ from './components/faq/FAQ';
+import Error from './components/error/Error';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
         <Footer/>
       </div>
