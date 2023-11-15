@@ -11,7 +11,7 @@ function Mistake() {
     <Header/>
       <div className="background-text">404</div>
       <div className="mistake-content">
-        <h1 className="mistake-title">Oops! Something went wrong.</h1>
+        <h1 className="mistake-title">Page not found.</h1>
         <p className="mistake-text">          
          Page you are trying to open does not exist. You may have mistyped the address, or the page has been moved to another URL.
         </p>
