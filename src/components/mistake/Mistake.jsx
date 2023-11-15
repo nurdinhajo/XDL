@@ -7,7 +7,7 @@ import Header from '../header/Header';
 
 function Mistake() {
   return (
-    <div className="mistake-container">'
+    <div className="mistake-container">
     <Header/>
       <div className="background-text">404</div>
       <div className="mistake-content">
