@@ -1,4 +1,6 @@
-import { useState } from "react";
+// Header.jsx
+
+import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
@@ -32,6 +34,15 @@ function Header() {
   const toggleNavbar = () => {
     setIsNavVisible(!isNavVisible);
   };
+
+  useEffect(() => {
+    const body = document.body;
+    if (isNavVisible) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
+  }, [isNavVisible]);
 
   return (
     <header>

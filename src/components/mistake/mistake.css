@@ -3,7 +3,6 @@ body {
     padding: 0;
   }
   
-  /* Mistake Page */
   .mistake-container {
     display: flex;
     align-items: center;
@@ -50,7 +49,7 @@ body {
     transition: background-color 0.3s ease;
   
     &:hover {
-      background-color: #16234d;
+      background-color: #37446e;
     }
   }
   

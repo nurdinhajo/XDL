@@ -6,6 +6,10 @@
   font-family: "Nunito";
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 header {
   /* border: 2px solid blue; */
   padding: 5px 0 5px 10px;
@@ -38,17 +42,18 @@ nav {
 
 nav ul li {
   list-style: none;
-  padding: 0 20px 0 0;
+  padding: 0 40px 0 0;
 }
 
 nav a {
   font-size: 16px;
   color: #16234d;
   text-decoration: none;
+  
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #0b163a;  
 }
 
 .orderBtn {
@@ -62,8 +67,8 @@ nav a:hover {
   /* margin-left: 0; Remove this line to center-align the button */
 }
 
-button:focus{
-  outline: 2px solid transparent;
+button:hover{
+  background-color: #0b163a;
 }
 
 header .nav-btn {
