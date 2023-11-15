@@ -2,10 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
-
-
 import Home from './components/home/Home';
 import Services from './components/xdlservices/Services';
 import Drivers from './components/drivers/Drivers';
@@ -18,7 +14,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header/>
         {/* <h1>App</h1> */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -29,7 +24,6 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/*" element={<Mistake />} />
         </Routes>
-        <Footer/>
       </div>
     </BrowserRouter>
   );

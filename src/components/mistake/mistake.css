@@ -6,12 +6,12 @@ body {
   
   /* Mistake Page */
   .mistake-container {
+    margin-top: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    position: relative; /* Add position relative to contain the background text */
-    padding: 20px; /* Added padding for responsiveness */
+    position: relative;
+    padding: 20px; 
   }
   
   .background-text {

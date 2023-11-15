@@ -1,11 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
-import"./home.css"
-function Home() {
-  return (
-    <div className="Home">
 
+
+import"./home.css"
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
+
+  
+function Home() {
+  
+  return (
+    
+    <div className="Home">
+      <Header/>
       <div className="xdlLandingPage">
         <div className="xdlIntro">
           <b><h1 className='fast'>
@@ -135,7 +143,8 @@ function Home() {
       </div>
 
     </div>
-  
+  <Footer/>
   </div>
+  
   )}
 export default Home
