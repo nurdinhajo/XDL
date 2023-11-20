@@ -1,7 +1,152 @@
-/* Google Font CDN */
-
+/* Footer.css */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-  *{
-   font-family: nunito;
-   font-weight: 700;
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+}
+
+/* Main footer container */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw; /* Responsive padding */
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Logo styling */
+.footerLogo {
+  text-align: center;
+  margin-bottom: 2vw; /* Responsive margin */
+}
+
+.footerLogo img {
+  max-height: 10vw; /* Responsive max-height */
+}
+
+/* Copyright notice */
+.xdl-copyright p {
+  font-size: 1.5vw; /* Responsive font size */
+  color: #5B5B5B;
+  font-weight: 400;
+}
+
+/* Links container styling */
+.moreLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Hover effect on links */
+.moreLinks p:hover {
+  color: #16234d;
+}
+
+/* Individual link sections */
+.link-1,
+.link-2,
+.link-3,
+.link-4 {
+  flex: 1 1 40%; /* Responsive flex property */
+  margin: 2vw; /* Responsive margin */
+  max-width: 200px;
+}
+
+/* Heading styles within link sections */
+.link-1 h4,
+.link-2 h4,
+.link-3 h4,
+.link-4 h4 {
+  color: #16234d;
+  font-size: 2.5vw; /* Responsive font size */
+}
+
+/* Paragraph styles within link sections */
+.link-1 p,
+.link-2 p,
+.link-3 p,
+.link-4 p {
+  margin: 1vw 0;
+  font-size: 1.8vw; /* Responsive font size */
+  color: black;
+  font-weight: 500;
+}
+
+/* Hover effect on general links */
+a:hover {
+  text-decoration: underline;
+  color: #16234d;
+}
+
+/* Active link styles */
+a:active {
+  color: #16234d;
+}
+
+/* Social icons section */
+.socials {
+  color: #16234d;
+}
+
+/* Heading styles for socials */
+.socials h3 {
+  font-size: 2.5vw; /* Responsive font size */
+}
+
+.socialIcons {
+  display: flex;
+  margin-top: 2vw;
+}
+
+/* Styling for individual social icons */
+.socialIcons a {
+  margin: 0 1vw;
+}
+
+.socialIcons img {
+  max-height: 3vw; /* Responsive max-height */
+}
+
+/* Media Query for screens larger than 1024px */
+@media (min-width: 1024px) {
+  footer {
+    padding: 2vw; /* Adjusted padding for larger screens */
   }
+
+  .moreLinks {
+    justify-content: center; /* Centering the content */
+  }
+
+  .link-1,
+  .link-2,
+  .link-3,
+  .link-4 {
+    flex: 1 1 auto; /* Adjusted flex property for larger screens */
+    max-width: 200px;
+  }
+
+  /* Adjusted font sizes for larger screens */
+  .link-1 h4,
+  .link-2 h4,
+  .link-3 h4,
+  .link-4 h4 {
+    font-size: 1.5vw;
+  }
+
+  .link-1 p,
+  .link-2 p,
+  .link-3 p,
+  .link-4 p {
+    font-size: 1vw;
+  }
+
+  /* Adjusted font size for socials heading */
+  .socials h3 {
+    font-size: 1vw;
+  }
+}

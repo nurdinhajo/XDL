@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './mistake.css';
-import Header from '../header/Header';
+// import Header from '../header/Header';
 
 function Mistake() {
   return (
     <div className="mistake-container">
-    <Header/>
+    {/* <Header/> */}
       <div className="background-text">404</div>
       <div className="mistake-content">
         <h1 className="mistake-title">Page not found.</h1>
