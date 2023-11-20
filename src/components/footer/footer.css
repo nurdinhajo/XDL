@@ -1,7 +1,5 @@
-/* Footer.css */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* Resetting default styles */
 * {
   margin: 0;
   text-decoration: none;
@@ -135,18 +133,22 @@ a:active {
   .link-2 h4,
   .link-3 h4,
   .link-4 h4 {
-    font-size: 1.5vw;
+    font-size: 3.5vw;
   }
 
   .link-1 p,
   .link-2 p,
   .link-3 p,
   .link-4 p {
-    font-size: 1vw;
+    font-size: 2.5vw;
   }
 
   /* Adjusted font size for socials heading */
   .socials h3 {
-    font-size: 1.5vw;
+    font-size: 3.5vw;
+  }
+
+  .xdl-copyright{
+    font-size: 1vw;
   }
 }
