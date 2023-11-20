@@ -29,7 +29,7 @@ footer {
 
 /* Copyright notice */
 .xdl-copyright p {
-  font-size: 1.5vw; /* Responsive font size */
+  font-size: 1vw; /* Responsive font size */
   color: #5B5B5B;
   font-weight: 400;
 }
