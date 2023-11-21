@@ -1,3 +1,4 @@
+/* Footer.css */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
@@ -15,6 +16,10 @@ footer {
   font-family: 'Nunito', sans-serif;
 }
 
+.moreLinks{
+  justify-content: center;
+}
+
 /* Logo styling */
 .footerLogo {
   text-align: center;
@@ -22,7 +27,8 @@ footer {
 }
 
 .footerLogo img {
-  max-height: 10vw; /* Responsive max-height */
+  width: 160px;
+  height: 45px;
 }
 
 /* Copyright notice */
@@ -52,7 +58,7 @@ footer {
 .link-4 {
   flex: 1 1 40%; /* Responsive flex property */
   margin: 2vw; /* Responsive margin */
-  max-width: 200px;
+  max-width: 100px;
 }
 
 /* Heading styles within link sections */
@@ -61,7 +67,7 @@ footer {
 .link-3 h4,
 .link-4 h4 {
   color: #16234d;
-  font-size: 2.2vw; /* Responsive font size */
+  font-size: 1.8vw; /* Responsive font size */
 }
 
 /* Paragraph styles within link sections */
@@ -70,10 +76,11 @@ footer {
 .link-3 p,
 .link-4 p {
   margin: 1vw 0;
-  font-size: 1.8vw; /* Responsive font size */
+  font-size: 1.2vw; /* Responsive font size */
   color: black;
   font-weight: 500;
 }
+
 
 /* Hover effect on general links */
 a:hover {
@@ -93,31 +100,28 @@ a:active {
 
 /* Heading styles for socials */
 .socials h3 {
-  font-size: 2.5vw; /* Responsive font size */
+  font-size: 1.8vw; /* Responsive font size */
 }
 
 .socialIcons {
   display: flex;
-  margin-top: 2vw;
+  margin-top: 1vw;
 }
 
 /* Styling for individual social icons */
 .socialIcons a {
-  margin: 0 1vw;
+  margin-right: 2vw;
 }
 
 .socialIcons img {
-  max-height: 3vw; /* Responsive max-height */
+  max-height: 2vw; /* Responsive max-height */
 }
 
-/* Media Query for screens larger than 1024px */
-@media (min-width: 1024px) {
-  footer {
-    padding: 2vw; /* Adjusted padding for larger screens */
-  }
-
+/* Media Query for screens smaller than 1024px */
+@media only screen and (max-width: 1024px) {
   .moreLinks {
-    justify-content: center; /* Centering the content */
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items */
   }
 
   .link-1,
@@ -126,29 +130,5 @@ a:active {
   .link-4 {
     flex: 1 1 auto; /* Adjusted flex property for larger screens */
     max-width: 200px;
-  }
-
-  /* Adjusted font sizes for larger screens */
-  .link-1 h4,
-  .link-2 h4,
-  .link-3 h4,
-  .link-4 h4 {
-    font-size: 3.5vw;
-  }
-
-  .link-1 p,
-  .link-2 p,
-  .link-3 p,
-  .link-4 p {
-    font-size: 2.5vw;
-  }
-
-  /* Adjusted font size for socials heading */
-  .socials h3 {
-    font-size: 3.5vw;
-  }
-
-  .xdl-copyright{
-    font-size: 1vw;
   }
 }
