@@ -131,4 +131,24 @@ a:active {
     flex: 1 1 auto; /* Adjusted flex property for larger screens */
     max-width: 200px;
   }
+
+  .link-1 h4,
+  .link-2 h4,
+  .link-3 h4,
+  .link-4 h4 {
+    font-size: 3vw; /* Responsive font size */
+  }
+
+  /* Paragraph styles within link sections */
+  .link-1 p,
+  .link-2 p,
+  .link-3 p,
+  .link-4 p {
+    margin: 1vw 0;
+    font-size: 2vw; /* Responsive font size */
+  }
+
+  .socials h3 {
+  font-size: 3vw; /* Responsive font size */
+
 }
