@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ font-family: "Nunito";
+}
+
+
+.contact-container {
+ width: 80%;
+ max-width: 600px;
+ margin: 20px auto;
+ padding: 84px 0 0 0;
+}
+
+.contact-form {
+ display: grid;
+ gap: 10px;
+}
+
+label {
+ font-weight: bold;
+}
+
+input,
+textarea {
+ width: 100%;
+ padding: 8px;
+ box-sizing: border-box;
+}
+
+button {
+ padding: 10px;
+ background-color: #16234d;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+ .contact-form {
+   grid-template-columns: 1fr;
+ }
+}
