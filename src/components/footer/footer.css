@@ -82,6 +82,15 @@ footer {
   font-weight: 500;
 }
 
+.link-1 a,
+.link-2 a,
+.link-3 a,
+.link-4 a{
+  margin: 1vw 0;
+  font-size: 1.2vw; /* Responsive font size */
+  color: black;
+  font-weight: 500;
+}
 
 /* Hover effect on general links */
 a:hover {
@@ -102,6 +111,7 @@ a:active {
 /* Heading styles for socials */
 .socials h3 {
   font-size: 1.8vw; /* Responsive font size */
+  margin-top: 2vw;
 }
 
 .socialIcons {
@@ -160,6 +170,14 @@ a:active {
   .link-2 p,
   .link-3 p,
   .link-4 p {
+    font-size: 2.5vw; 
+    padding-bottom: 2vw;
+  }
+
+  .link-1 a,
+  .link-2 a,
+  .link-3 a,
+  .link-4 a {
     font-size: 2.5vw; 
     padding-bottom: 2vw;
   }

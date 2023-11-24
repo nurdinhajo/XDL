@@ -23,42 +23,42 @@ function Footer() {
       <div className="moreLinks">
         <div className="link-1">
           <h4>Services</h4>
-          <Link to="/">
+          <a href="/services">
             <p>Transport</p>
-          </Link>
+          </a>
         </div>
 
         <div className="link-2">
           <h4>Drivers</h4>
-          <Link to="/">
+          <a href="/">
             <p>Be a Delivery Partner</p>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <p>Fleet Management</p>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <p>Driver Resources</p>
-          </Link>
+          </a>
         </div>
 
         <div className="link-3">
           <h4>Policies</h4>
-          <Link to="/">
+          <a href="/">
             <p>Terms of Service</p>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <p>Privacy</p>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <p>Driver Privacy</p>
-          </Link>
+          </a>
         </div>
 
         <div className="link-4">
           <h4>Support</h4>
-          <Link to="/">
-            <p>Contact Us</p>
-          </Link>
+          <a href="/contact">
+            Contact Us
+          </a>
 
           <div className="socials">
         <h3>Follow</h3>
