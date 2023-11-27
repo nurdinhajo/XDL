@@ -12,13 +12,17 @@
 
 .contactDetails {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 50px; 
+
 }
 
-.contactDetails div {
+.contactDetails div a {
   padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* border: 2px solid red; */
   height: 50px;
   flex-grow: 1;
@@ -66,6 +70,7 @@ label {
 
 input,
 textarea {
+ text-transform: capitalize; 
  width: 100%;
  padding: 8px;
  box-sizing: border-box;

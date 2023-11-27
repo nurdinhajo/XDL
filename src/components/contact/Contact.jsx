@@ -5,54 +5,61 @@ import Footer from '../footer/Footer';
 import './contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
+  const initialValues = {
+    firstName: '',
+    lastName: '',
     email: '',
     message: '',
-  });
+  };
 
-  const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState(initialValues);
+  const [errors, setErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-    // Clear the error when user starts typing
-    setErrors({
-      ...errors,
-      [name]: '',
-    });
+    setFormData({ ...formData, [name]: value });
+    setErrors({ ...errors, [name]: '' });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setErrors(validate(formData));
+    setIsSubmit(true);
 
-    // Check for empty fields and set errors
-    const newErrors = {};
-    Object.keys(formData).forEach((key) => {
-      if (!formData[key]) {
-        newErrors[key] = 'Please complete this required field.';
-      }
-    });
+    // Handle form submission logic here if needed
+    if (Object.keys(errors).length === 0 && isSubmit) {
+      console.log('Form submitted:', formData);
+    }
+  };
 
-    // If there are errors, set them in the state and prevent form submission
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    // Validate First Name
+    if (!values.firstName) {
+      errors.firstName = 'First Name is required!';
     }
 
-    // Clear errors if there are no issues
-    setErrors({});
+    // Validate Last Name
+    if (!values.lastName) {
+      errors.lastName = 'Last Name is required!';
+    }
 
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    // Validate Email
+    if (!values.email) {
+      errors.email = 'Email is required!';
+    } else if (!regex.test(values.email)) {
+      errors.email = 'This is not a valid email format!';
+    }
+
+    // Validate Message
+    if (!values.message) {
+      errors.message = 'Message is required!';
+    }
+
+    return errors;
   };
 
   return (
@@ -60,78 +67,83 @@ function Contact() {
       <Header />
 
       <div className="contactDetails">
-        <div className="call">
-         <a href="tel:+254799396000">
-           <img src={process.env.PUBLIC_URL + '/XDL-CALL.png'} alt="XOBO Call" />     
+      <div className="call">
+          <a href="tel:+254799396000">
+            <img src={process.env.PUBLIC_URL + '/XDL-CALL.png'} alt="XOBO Call" />
             +254 799 396 000
           </a>
         </div>
 
         <div className="email">
-         <a href="mailto:info@xobo.co.ke" >
+          <a href="mailto:info@xobo.co.ke">
             <img src={process.env.PUBLIC_URL + '/XDL-EMAIL.png'} alt="XOBO Email" />
-          info@xobo.co.ke
-         </a>
+            info@xobo.co.ke
+          </a>
         </div>
 
         <div className="whatsapp">
-         <a href="https://api.whatsapp.com/send?phone=254799396000" target='_blank'>
-           <img src={process.env.PUBLIC_URL + '/XDL-WHATSAPP.png'} alt="XOBO WhatsApp" />          
+          <a href="https://api.whatsapp.com/send?phone=254799396000" target='_blank'>
+            <img src={process.env.PUBLIC_URL + '/XDL-WHATSAPP.png'} alt="XOBO WhatsApp" />
             +254 799 396 000
-        </a>
+          </a>
         </div>
       </div>
 
       <div className="contact-container">
         <form className="contact-form" onSubmit={handleSubmit}>
-          <h3>
-            Need More Information?
-          </h3>
-          <p>
-            Fill up the form below to send us a message and we will get in touch as soon as possible.
-          </p>
-          <label htmlFor="name">First Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          {errors.name && <p className="error-message">{errors.name}</p>}
+          <h3>Need More Information?</h3>
+          <p>Fill up the form below to send us a message, and we will get in touch as soon as possible.</p>
 
-          <label htmlFor="name">Last Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          {errors.name && <p className="error-message">{errors.name}</p>}
+          <div className="input-container">
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+            {errors.firstName && <p className="error-message">{errors.firstName}</p>}
+          </div>
 
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          {errors.email && <p className="error-message">{errors.email}</p>}
+          <div className="input-container">
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+            {errors.lastName && <p className="error-message">{errors.lastName}</p>}
+          </div>
 
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-          {errors.message && <p className="error-message">{errors.message}</p>}
+          <div className="input-container">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            {errors.email && <p className="error-message">{errors.email}</p>}
+          </div>
+
+          <div className="input-container">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            {errors.message && <p className="error-message">{errors.message}</p>}
+          </div>
 
           <button type="submit">Submit</button>
         </form>
