@@ -100,6 +100,7 @@ function Contact() {
               type="text"
               id="firstName"
               name="firstName"
+              placeholder='Enter Your First Name'
               value={formData.firstName}
               onChange={handleChange}
               required
@@ -113,6 +114,7 @@ function Contact() {
               type="text"
               id="lastName"
               name="lastName"
+              placeholder='Enter Your Last Name'
               value={formData.lastName}
               onChange={handleChange}
               required
@@ -126,6 +128,7 @@ function Contact() {
               type="email"
               id="email"
               name="email"
+              placeholder='you@example.com'
               value={formData.email}
               onChange={handleChange}
               required
@@ -140,6 +143,7 @@ function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              placeholder='Your Message'
               required
             ></textarea>
             {errors.message && <p className="error-message">{errors.message}</p>}
