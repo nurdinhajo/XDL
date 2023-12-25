@@ -1,7 +1,9 @@
-// Contact.jsx
-import React, { useState } from 'react';
+// Import necessary modules
+import React, { useState, useEffect } from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 import './contact.css';
 
 function Contact() {
@@ -9,6 +11,7 @@ function Contact() {
     firstName: '',
     lastName: '',
     email: '',
+    phoneNumber: '',
     message: '',
   };
 
@@ -16,45 +19,35 @@ function Contact() {
   const [errors, setErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = (value, name) => {
     setFormData({ ...formData, [name]: value });
     setErrors({ ...errors, [name]: '' });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setErrors(validate(formData));
-    setIsSubmit(true);
-
-    // Handle form submission logic here if needed
-    if (Object.keys(errors).length === 0 && isSubmit) {
-      console.log('Form submitted:', formData);
-    }
   };
 
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-    // Validate First Name
     if (!values.firstName) {
       errors.firstName = 'First Name is required!';
     }
 
-    // Validate Last Name
     if (!values.lastName) {
       errors.lastName = 'Last Name is required!';
     }
 
-    // Validate Email
+    if (!values.phoneNumber) {
+      errors.phoneNumber = 'Phone Number is required!';
+    } else if (values.phoneNumber.length < 10 || values.phoneNumber.length > 12) {
+      errors.phoneNumber = 'Phone Number should be between 10 and 12 digits!';
+    }
+
     if (!values.email) {
       errors.email = 'Email is required!';
     } else if (!regex.test(values.email)) {
       errors.email = 'This is not a valid email format!';
     }
 
-    // Validate Message
     if (!values.message) {
       errors.message = 'Message is required!';
     }
@@ -62,12 +55,30 @@ function Contact() {
     return errors;
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setErrors(validate(formData));
+    setIsSubmit(true);
+  };
+
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && isSubmit) {
+      console.log('Form submitted:', formData);
+      clearForm();
+    }
+  }, [errors, isSubmit, formData]);
+
+  const clearForm = () => {
+    setFormData(initialValues);
+    setIsSubmit(false);
+  };
+
   return (
     <div className="contact">
       <Header />
 
       <div className="contactDetails">
-      <div className="call">
+        <div className="call">
           <a href="tel:+254799396000">
             <img src={process.env.PUBLIC_URL + '/XDL-CALL.png'} alt="XOBO Call" />
             +254 799 396 000
@@ -100,9 +111,9 @@ function Contact() {
               type="text"
               id="firstName"
               name="firstName"
-              placeholder='Enter Your First Name'
+              placeholder='Enter Your First names'
               value={formData.firstName}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e.target.value, 'firstName')}
               required
             />
             {errors.firstName && <p className="error-message">{errors.firstName}</p>}
@@ -114,12 +125,28 @@ function Contact() {
               type="text"
               id="lastName"
               name="lastName"
-              placeholder='Enter Your Last Name'
+              placeholder='Enter Your Last names'
               value={formData.lastName}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e.target.value, 'lastName')}
               required
             />
             {errors.lastName && <p className="error-message">{errors.lastName}</p>}
+          </div>
+
+          <div className="input-container">
+            <label htmlFor="phoneNumber">Phone Number:</label>
+            <PhoneInput
+              country={'ke'}
+              id="phoneNumber"
+              onlyCountries={['ke']}
+              value={formData.phoneNumber}
+              placeholder='712 345 678'
+              onChange={(value) => handleChange(value, 'phoneNumber')}
+              inputProps={{
+                required: true,
+              }}
+            />
+            {errors.phoneNumber && <p className="error-message red">{errors.phoneNumber}</p>}
           </div>
 
           <div className="input-container">
@@ -130,10 +157,10 @@ function Contact() {
               name="email"
               placeholder='you@example.com'
               value={formData.email}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e.target.value, 'email')}
               required
             />
-            {errors.email && <p className="error-message">{errors.email}</p>}
+            {errors.email && <p className="error-message red">{errors.email}</p>}
           </div>
 
           <div className="input-container">
@@ -142,11 +169,11 @@ function Contact() {
               id="message"
               name="message"
               value={formData.message}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e.target.value, 'message')}
               placeholder='Your Message'
               required
             ></textarea>
-            {errors.message && <p className="error-message">{errors.message}</p>}
+            {errors.message && <p className="error-message red">{errors.message}</p>}
           </div>
 
           <button type="submit">Submit</button>
