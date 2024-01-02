@@ -1,9 +1,34 @@
-import React from 'react'
+import React from 'react';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
+import './services.css';
 
 function Services() {
   return (
-    <div>Services</div>
-  )
+    <div className="services">
+      <Header />
+
+      <div className="serviceDetails">
+        <div className="background-container">
+          <img src={process.env.PUBLIC_URL + '/SERVICES/XDL-SERVICES-2.png'} alt="XOBO SERVICES" />
+
+
+          <div className="content">
+          <h2>On-demand delivery for your business</h2>
+
+          <a href="http://18.130.30.102/xobo" target='_blank' rel="noreferrer">
+
+            <button className='serviceBtn'>
+              Deliver Now
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default Services
+export default Services;
