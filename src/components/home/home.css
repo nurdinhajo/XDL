@@ -28,13 +28,12 @@
 
 .xdlIntro h1.fast {
   font-size: 4.35vw;
-  border: 2px solid red;
-  padding: 20px 5px;
+  /* border: 2px solid red; */
+  padding: 35px 5px;
   width: auto;
   text-align: center;
   color: #16234d;
   font-weight: 650;
-  padding-top: 25px;
 }
 
 .xdlIntro h1.fast #middledot {
@@ -44,7 +43,6 @@
 
 .xdlIntro h3.desc {
   font-size: 1.5vw;
-  padding: 30px 0 0 0;
 }
 
 .xdlIntro .description {
@@ -258,14 +256,13 @@ button:hover {
   }
 
   .xdlIntro h1.fast {
-    font-size: 7vw;
-    border: 1px solid red;
+    font-size: 9vw;
+    /* border: 1px solid red; */
     justify-content: center;
     padding: 40px 0;
     text-align: center; /* Make sure text alignment is centered */
-    color: #16234d;
-    font-weight: 650;
-    padding-top: 25px;
+    width: 400px;
+    letter-spacing: 0.1px;
   }
 
   .xdlIntro h1.fast #middledot {
