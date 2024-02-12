@@ -21,7 +21,9 @@ const FAQ = () => {
   return (
     <div className="faq-container">
      <div className="faq-data">
+      
         <Header/>
+
         <h1>Frequently Asked Questions</h1>
         <ul className="faq-list">
           {faqData.map((faq, index) => (
@@ -33,7 +35,9 @@ const FAQ = () => {
             </li>
           ))}
         </ul>
+        
         <Footer/>
+        
       </div>
     </div>
   );
