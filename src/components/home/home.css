@@ -26,16 +26,20 @@
   max-width: 50%;
 }
 
-.xdlIntro h1, .xdlIntro .fast {
-  font-size: 6.5vw;
+.xdlIntro h1.fast {
+  font-size: 4.35vw;
+  border: 2px solid red;
+  padding: 20px 5px;
+  width: auto;
+  text-align: center;
   color: #16234d;
   font-weight: 650;
   padding-top: 25px;
 }
 
-.xdlIntro h1 #middledot {
+.xdlIntro h1.fast #middledot {
   color: red;
-  font-size: 8vw;
+  font-size: 4vw;
 }
 
 .xdlIntro h3.desc {
@@ -247,23 +251,25 @@ button:hover {
     align-items: center;
   }
 
-  .xdlIntro h1 {
-    font-size: 200vw;
-  }
-
   .xdlVideo iframe {
     width: 90vw;
     height: 60vw;
     padding: 2vw 0 0 0;
   }
 
-  .xdlIntro h1, .xdlIntro .fast {
-    font-size: 5vw;
-    text-align: center;
+  .xdlIntro h1.fast {
+    font-size: 7vw;
+    border: 1px solid red;
+    justify-content: center;
+    padding: 40px 0;
+    text-align: center; /* Make sure text alignment is centered */
+    color: #16234d;
+    font-weight: 650;
+    padding-top: 25px;
   }
 
-  .xdlIntro h1 #middledot {
-    font-size: 6vw;
+  .xdlIntro h1.fast #middledot {
+    font-size: 8vw;
   }
 
   .xdlIntro h3.desc {
@@ -282,17 +288,6 @@ button:hover {
 
   .xdlIntro, .xdlVideo, .xdlClient {
     order: 1; /* Reorder .xdlIntro, .xdlVideo, and .xdlClient to appear on top */
-  }
-
-  .xdlIntro h1.fast {
-    font-size: 10vw;
-    width: 80vw;
-    height: 15vw;
-  }
-
-  .xdlIntro h1 #middledot {
-    color: red;
-    font-size: 10vw;
   }
 
   .xdlIntro h3.desc {

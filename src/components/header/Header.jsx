@@ -10,14 +10,14 @@ const navLinks = [
     name: 'Services',
     link: '/services',
   },
-  {
-    name: 'Drivers',
-    link: '/drivers',
-  },
-  {
-    name: 'About',
-    link: '/about',
-  },
+  // {
+  //   name: 'Drivers',
+  //   link: '/drivers',
+  // },
+  // {
+  //   name: 'About',
+  //   link: '/about',
+  // },
   {
     name: 'Contact',
     link: '/contact',
@@ -61,7 +61,7 @@ function Header() {
           </ul>
         ))}
 
-        <a href="http://18.130.30.102/xobo" target="blank">
+        <a href="http://18.130.30.102/xobo" target='_blank' rel='noopener noreferrer'>
           <button className="orderBtn">
             Transport Login
           </button>

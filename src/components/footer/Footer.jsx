@@ -20,6 +20,8 @@ function Footer() {
         {/* <p>&copy;XOBO {currentYear}. All rights reserved.</p> */}
       </div>
 
+      {/* SERVIVES */}
+
       <div className="moreLinks">
         <div className="link-1">
           <h4>Services</h4>
@@ -28,7 +30,9 @@ function Footer() {
           </a>
         </div>
 
-        <div className="link-2">
+        {/* DRIVERS */}
+
+        {/* <div className="link-2">
           <h4>Drivers</h4>
           <a href="/">
             <p>Be a Delivery Partner</p>
@@ -39,7 +43,11 @@ function Footer() {
           <a href="/">
             <p>Driver Resources</p>
           </a>
-        </div>
+        </div> */}
+
+
+          {/* LEGAL */}
+
 
         <div className="link-3">
           <h4>Policies</h4>
@@ -54,11 +62,18 @@ function Footer() {
           </a>
         </div>
 
+
+          {/* SUPPORT */}
+
+
         <div className="link-4">
           <h4>Support</h4>
           <a href="/contact">
             Contact Us
           </a>
+
+
+          {/* SOCIALS */}
 
           <div className="socials">
         <h3>Follow</h3>

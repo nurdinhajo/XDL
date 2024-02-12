@@ -16,9 +16,11 @@ function Home() {
       <Header/>
       <div className="xdlLandingPage">
         <div className="xdlIntro">
-          <b><h1 className='fast'>
-            Fast <span id='middledot'>·</span> Reliable
-          </h1></b>
+          <b>
+            <h1 className='fast'>
+           Simple <span id='middledot'>·</span> Fast <span id='middledot'>·</span> Reliable
+            </h1>
+            </b>
 
           <h3 className='desc'>
             On-demand delivery platform
@@ -29,7 +31,7 @@ function Home() {
           </h3>
 
 
-          <a href="http://18.130.30.102/xobo" target='blank'>
+          <a href="http://18.130.30.102/xobo" target='_blank' rel='noopener noreferrer'>
             <button className='orderBtn'>
               Deliver Now
             </button>
