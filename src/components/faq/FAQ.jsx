@@ -17,15 +17,13 @@ const FAQ = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
-  const [answerHeights, setAnswerHeights] = useState([]);
+  // const [answerHeights, setAnswerHeights] = useState([]);
 
   const answerRefs = useRef([]);
 
-  useEffect(() => {
-    setAnswerHeights(
+  useEffect(() => {  
       answerRefs.current.map((ref) => (ref && ref.clientHeight) || 0)
-    );
-  }, [faqData]);
+  }, []);
 
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
