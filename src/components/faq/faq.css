@@ -7,7 +7,10 @@
 
 .faq-container {
  margin-top: 84px;
- 
+}
+
+.faq-container .faq-item.active .answer {
+  display: block;
 }
 
 .faq-data{
@@ -20,6 +23,7 @@
  padding: 20px;
 }
 
+
 .faq-container h1 {
  font-size: 4vw;
  text-align: left;
@@ -30,6 +34,8 @@
 .faq-list {
  list-style: none;
  padding: 0;
+ transition: width 3s;
+ transition-delay: 1s;
  align-items: center;
 }
 
@@ -44,11 +50,16 @@
  padding: 15px;
  background-color: #f0f0f0;
  cursor: pointer;
+ color: #16234d; 
+ font-size: 1.5vw;
+ transition: width 3s;
+ transition-delay: 3s;
 }
 
 .faq-container .answer {
  padding: 15px;
  display: none;
+ font-weight: 500;
 }
 
 .faq-container .faq-item.active .answer {
@@ -63,6 +74,14 @@
  .faq-container .question,
  .faq-container .answer {
    padding: 10px;
+ }
+
+ .faq-container .question {
+  font-size: 4vw;
+ }
+
+ .faq-container .answer {
+  font-size: 3vw;
  }
 
  .faq-container h1 {
