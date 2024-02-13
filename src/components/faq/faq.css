@@ -21,9 +21,10 @@
 }
 
 .faq-container h1 {
- font-size: 2rem;
- text-align: center;
+ font-size: 4vw;
+ text-align: left;
  margin-bottom: 20px;
+ padding: 0 0 0 25px;
 }
 
 .faq-list {
@@ -63,4 +64,10 @@
  .faq-container .answer {
    padding: 10px;
  }
+
+ .faq-container h1 {
+ font-size: 7vw;
+ padding: 0 0 0 10px;
+}
+
 }
