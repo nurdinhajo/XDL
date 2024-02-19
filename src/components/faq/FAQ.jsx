@@ -13,7 +13,11 @@ const FAQ = () => {
 
     { question: 'How to cancel a trip', answer: 'You can cancel a trip on the app before or after you are matched with a rider/driver. However, in some cases, a cancellation fee may be charged. To cancel a trip, tap the slider on the home screen to cancel and select the drop-down reasons for cancelling the order.' },
 
-    { question: 'Managing app notifications', answer: 'The Xobo app will send you notifications on the driver’s time of arrival and promotional campaigns. If you don’t want to receive these messages you can switch them off on your device settings.' },
+    { question: 
+        'Managing app notifications', 
+      answer: 
+        'The Xobo app will send you notifications on the driver’s time of arrival and promotional campaigns. If you don’t want to receive these messages you can switch them off on your device settings.' 
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);

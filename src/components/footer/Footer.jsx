@@ -54,8 +54,8 @@ function Footer() {
           <a href="/">
             <p>Terms of Service</p>
           </a>
-          <a href="/">
-            <p>Privacy</p>
+          <a href="/privacy-policy">
+            <p>Privacy Policy</p>
           </a>
           <a href="/">
             <p>Driver Privacy</p>

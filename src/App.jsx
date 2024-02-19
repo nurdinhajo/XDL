@@ -8,6 +8,7 @@ import Drivers from './components/drivers/Drivers';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import FAQ from './components/faq/FAQ';
+import Privacy from './components/privacy/Privacy';
 import Mistake from './components/mistake/Mistake';
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <Route path="/drivers" element={<Drivers />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/*" element={<Mistake />} />
         </Routes>
