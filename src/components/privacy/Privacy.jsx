@@ -106,7 +106,7 @@ function Privacy() {
         no longer in use.  <br />
         
         We use both session and persistent Cookies for the
-        purposes set out below: <br />
+        purposes set out below: <br /><br />
         
         <h4>Necessary / Essential Cookies</h4> <br />
         Type: Session Cookies  <br />
