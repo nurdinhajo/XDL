@@ -9,7 +9,7 @@ function Privacy() {
     <div className="privacy">
       <Header />
       <div className="data-privacy">
-        <h1>Privacy Policy</h1>
+        <h1>Privacy Policy</h1><br />
         <h2>Last updated June 2nd, 2023</h2>
         <hr /><br />
         
