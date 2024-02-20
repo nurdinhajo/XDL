@@ -19,7 +19,7 @@ function Privacy() {
         Here, you can find out what
         kind of information we use to provide you with our bundle of
         transportation services, how we use your information to keep you safe,
-        and the choices and controls available to you.  In this notice, it is
+        and the choices and controls available to you. In this notice, it is
         also stated that all the possible rights you have regarding to the
         privacy of your data. The data protection rules are set up in order to
         protect everyone who participates in the work. The term “us” or “we”
