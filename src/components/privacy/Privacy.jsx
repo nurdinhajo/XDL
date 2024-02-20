@@ -26,7 +26,7 @@ function Privacy() {
         refers to <b>XOBO</b> company incorporated and registered under the laws of the
         Kenyan government. <br /><br />
 
-        In compliance with data protection regulations, we are licensed Data Controllers responsible for overseeing inquiries related to this privacy notice and ensuring the security of your personal data. For additional information about our licensed Data Controllers and their duties, please consult our <a href="public/XDL-DOCS/XOBO DELIVERY LIMITED - DATA CONTROLLER CERTIFICATE.pdf" target="_blank" download={"XOBO DELIVERY LIMITED - DATA CONTROLLER CERTIFICATE.pdf"}>Data Controller Document</a> available here. <br /><br />
+        In compliance with data protection regulations, we are licensed Data Controllers responsible for overseeing inquiries related to this privacy notice and ensuring the security of your personal data. For additional information about our licensed Data Controllers and their duties, please consult our <a href="/xdl-docs/XDL - DATA CONTROLLER DOC.pdf" target="_blank" download={"XOBO DELIVERY LIMITED - DATA CONTROLLER CERTIFICATE.pdf"}>Data Controller Document</a> available here. <br /><br />
         
         The term "you" or "your" refers to people who go to
         our app service that is requesting, hiring, and/or receiving a
