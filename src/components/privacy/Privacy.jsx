@@ -26,7 +26,7 @@ function Privacy() {
         refers to <b>XOBO</b> company incorporated and registered under the laws of the
         Kenyan government. <br /><br />
 
-        In compliance with data protection regulations, we are licensed Data Controllers responsible for overseeing inquiries related to this privacy notice and ensuring the security of your personal data. For additional information about our licensed Data Controllers and their duties, please consult our <a href="/xdl-docs/XDL - DATA CONTROLLER DOC.pdf" target="_blank" download={"XOBO DELIVERY LIMITED - DATA CONTROLLER CERTIFICATE.pdf"}>Data Controller Document</a> available here. <br /><br />
+        In compliance with data protection regulations, we are licensed Data Controllers responsible for overseeing inquiries related to this privacy notice and ensuring the security of your personal data. For additional information about our licensed Data Controllers, please consult our <a href="/xdl-docs/XDL - DATA CONTROLLER DOC.pdf" target="_blank" download={"XOBO DELIVERY LIMITED - DATA CONTROLLER CERTIFICATE.pdf"}>Data Controller Document</a>. <br /><br />
         
         The term "you" or "your" refers to people who go to
         our app service that is requesting, hiring, and/or receiving a
@@ -324,28 +324,28 @@ function Privacy() {
         &nbsp;&nbsp;• You have the right to ask for a copy of any personal
         information we've collected about you. We may not always provide all the
         information you request from us because we have to balance our rights
-        against those of others. <br />
+        against those of others. <br /><br />
 
         <i>Your right to rectification</i> <br />
         &nbsp;&nbsp;• You can get better assistance with all your personal data on the app. You also have
         the right to ask us to update or complete any of the records that you
         believe are incomplete. This way, you have an easier time getting
-        everything booted up and running smoothly.<br />
+        everything booted up and running smoothly.<br /><br />
 
         <i>Your right to erasure</i><br />
         &nbsp;&nbsp;• You can request that your personal information that's stored on our servers
-        be removed in certain circumstances<br />
+        be removed in certain circumstances<br /><br />
 
         <i>Your right to restriction of processing</i> <br />
         &nbsp;&nbsp;• You have the right to ask us to restrict the processing of
         your information in certain circumstances. For example, if you file a
         complaint with the company or if you would like to exercise legal rights
-        (like claiming compensation for damages or your data has been hacked)<br />
+        (like claiming compensation for damages or your data has been hacked)<br /><br />
 
         <i>Your right to object to processing</i><br />
         &nbsp;&nbsp;• We're processing your data on the
         basis of legitimate interests. If you want to object, you can tell us
-        that and ask for a person to review it.<br />
+        that and ask for a person to review it.<br /><br />
         
         <h3>10. Retention</h3> <br />
 
