@@ -278,7 +278,7 @@ button:hover {
 
   .xdlIntro .description {
     max-width: 100%;
-    text-align: left; /* Center-align the text on smaller screens */
+    text-align: justify;
   }
 
   button {
