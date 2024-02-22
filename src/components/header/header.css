@@ -48,13 +48,12 @@ nav ul li {
 
 nav a {
   font-size: 16px;
-  color: #16234d;
-  text-decoration: none;
-  
+  color: #16234d;  
 }
 
 nav a:hover {
   color: #0b163a;  
+  text-decoration: none;
 }
 
 .orderBtn {
