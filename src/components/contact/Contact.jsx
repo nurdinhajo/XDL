@@ -80,21 +80,21 @@ function Contact() {
       <div className="contactDetails">
         <div className="call">
           <a href="tel:+254799396000">
-            <img src={process.env.PUBLIC_URL + '/XDL-CALL.png'} alt="XOBO Call" />
+            <img src={process.env.PUBLIC_URL + '../media/XDL-CALL.png'} alt="XOBO Call" />
             +254 799 396 000
           </a>
         </div>
 
         <div className="email">
           <a href="mailto:info@xobo.co.ke">
-            <img src={process.env.PUBLIC_URL + '/XDL-EMAIL.png'} alt="XOBO Email" />
+            <img src={process.env.PUBLIC_URL + '../media/XDL-EMAIL.png'} alt="XOBO Email" />
             info@xobo.co.ke
           </a>
         </div>
 
         <div className="whatsapp">
           <a href="https://api.whatsapp.com/send?phone=254799396000" target='_blank'>
-            <img src={process.env.PUBLIC_URL + '/XDL-WHATSAPP.png'} alt="XOBO WhatsApp" />
+            <img src={process.env.PUBLIC_URL + '../media/XDL-WHATSAPP.png'} alt="XOBO WhatsApp" />
             +254 799 396 000
           </a>
         </div>

@@ -51,7 +51,7 @@ function Home() {
 
       <div className="xdlClient">
         <div className="xdlClientImg">
-          <img src={process.env.PUBLIC_URL + '/XDL-CLIENT.png'} alt="XOBO Client" />
+          <img src={process.env.PUBLIC_URL + '/media/XDL-CLIENT.png'} alt="XOBO Client" />
 
           <div className="xdlClientDesc">
             <h2>
@@ -101,7 +101,7 @@ function Home() {
 
           <div className="xdlBenefits-1">
             <div className="benefit-icon">
-              <img src={process.env.PUBLIC_URL + '/ICONS/Fast.png'} alt="XOBO RELIABLE" />
+              <img src={process.env.PUBLIC_URL + '../ICONS/Fast.png'} alt="XOBO RELIABLE" />
             </div>
             <div className="benefit-content">
               <h3>Fast & flexible delivery</h3>
@@ -111,7 +111,7 @@ function Home() {
 
           <div className="xdlBenefits-2">
             <div className="benefit-icon">
-              <img src={process.env.PUBLIC_URL + '/ICONS/Reduce.png'} alt="XOBO SAVING" />
+              <img src={process.env.PUBLIC_URL + '../ICONS/Reduce.png'} alt="XOBO SAVING" />
             </div>
             <div className="benefit-content">
               <h3>Reduce operational costs</h3>
@@ -121,7 +121,7 @@ function Home() {
 
           <div className="xdlBenefits-3">
             <div className="benefit-icon">
-              <img id='track' src={process.env.PUBLIC_URL + '/ICONS/Track.png'} alt="XOBO TRACKING" />
+              <img id='track' src={process.env.PUBLIC_URL + '../ICONS/Track.png'} alt="XOBO TRACKING" />
             </div>
             <div className="benefit-content">
               <h3>Real-time tracking</h3>
@@ -131,7 +131,7 @@ function Home() {
 
           <div className="xdlBenefits-4">
             <div className="benefit-icon">
-              <img  src={process.env.PUBLIC_URL + '/ICONS/Vehicles.png'} alt="XOBO VEHICLE" />
+              <img  src={process.env.PUBLIC_URL + '../ICONS/Vehicles.png'} alt="XOBO VEHICLE" />
             </div>
             <div className="benefit-content">
               <h3>Vast array of vehicles</h3>
@@ -141,7 +141,7 @@ function Home() {
       </div>
 
       <div className="xdlDelivered">
-        <img  src={process.env.PUBLIC_URL + '/XDL-DELIVERED.png'} alt="XOBO Client" />
+        <img  src={process.env.PUBLIC_URL + '/media/XDL-DELIVERED.png'} alt="XOBO Client" />
       </div>
 
     </div>

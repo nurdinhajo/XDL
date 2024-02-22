@@ -16,7 +16,7 @@ function Footer() {
   return (
     <footer>
       <div className="footerLogo">
-        <img src={process.env.PUBLIC_URL + '/Header-Logo.jpeg'} alt="XOBO Logo" />
+        <img src={process.env.PUBLIC_URL + '/media/Header-Logo.jpeg'} alt="XOBO Logo" />
         {/* <p>&copy;XOBO {currentYear}. All rights reserved.</p> */}
       </div>
 
@@ -80,19 +80,19 @@ function Footer() {
 
         <div className="socialIcons">
           <a href='https://twitter.com/XoboDelivery_' target='blank'>
-            <img src={process.env.PUBLIC_URL + '/ICONS/XDL-X.png'} alt="XOBO X" />
+            <img src={process.env.PUBLIC_URL + '../ICONS/XDL-X.png'} alt="XOBO X" />
           </a>
           
           <a href='https://www.facebook.com/XoboDelivery/' target='blank'>
-            <img src={process.env.PUBLIC_URL + '/ICONS/XDL-FACEBOOK.png'} alt="XOBO FaceBook" />
+            <img src={process.env.PUBLIC_URL + '../ICONS/XDL-FACEBOOK.png'} alt="XOBO FaceBook" />
           </a>
 
           <a href='https://www.instagram.com/xobo_delivery/' target='blank'>
-            <img src={process.env.PUBLIC_URL + '/ICONS/XDL-INSTAGRAM.png'} alt="XOBO Instagram" />
+            <img src={process.env.PUBLIC_URL + '../ICONS/XDL-INSTAGRAM.png'} alt="XOBO Instagram" />
           </a>
 
           <a href='https://www.youtube.com/@xobodelivery1476' target='blank'>
-            <img  id='youtube' src={process.env.PUBLIC_URL + '/ICONS/XDL-YOUTUBE.png'} alt="XOBO YouTube" />
+            <img  id='youtube' src={process.env.PUBLIC_URL + '../ICONS/XDL-YOUTUBE.png'} alt="XOBO YouTube" />
           </a>
 
         </div>
