@@ -278,6 +278,7 @@ button:hover {
 
   .xdlIntro .description {
     max-width: 75%;
+    text-align: center;
     text-align: justify;
     letter-spacing: 0.2px;
   }
