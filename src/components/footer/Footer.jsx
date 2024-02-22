@@ -69,7 +69,7 @@ function Footer() {
         <div className="link-4">
           <h4>Support</h4>
           <a href="/contact">
-            Contact Us
+            <p>Contact Us</p>
           </a>
 
 

@@ -162,7 +162,7 @@ a:active {
   .link-2 h4,
   .link-3 h4,
   .link-4 h4 {
-    font-size: 3.5vw; /* Responsive font size */
+    font-size: 4.5vw; /* Responsive font size */
   }
 
   /* Paragraph styles within link sections */
@@ -170,33 +170,28 @@ a:active {
   .link-2 p,
   .link-3 p,
   .link-4 p {
-    font-size: 2.5vw; 
+    font-size: 3.7vw; 
     padding-bottom: 2vw;
   }
 
-  .link-1 a,
-  .link-2 a,
-  .link-3 a,
-  .link-4 a {
-    font-size: 2.5vw; 
-    padding-bottom: 2vw;
-  }
 
   .socials {
     margin-top: 20px;
   }
 
   .socials h3{
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 
   .socialIcons {
     display: flex;
     gap: 10px;
+    padding: 0;
+    justify-content: center;
   }
 
   .socialIcons img{
-    max-height: 4vw;
+    max-height: 5vw;
   }
 
   .xdl-copyright {
