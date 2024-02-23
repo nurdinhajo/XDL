@@ -1,5 +1,4 @@
-// Import necessary modules
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import PhoneInput from 'react-phone-input-2';
@@ -7,13 +6,13 @@ import 'react-phone-input-2/lib/style.css';
 import './contact.css';
 
 function Contact() {
-  const initialValues = {
+  const initialValues = useMemo(() => ({
     firstName: '',
     lastName: '',
     email: '',
     phoneNumber: '',
     message: '',
-  };
+  }), []); // Empty dependency array since it doesn't depend on any variables
 
   const [formData, setFormData] = useState(initialValues);
   const [errors, setErrors] = useState({});
@@ -62,16 +61,16 @@ function Contact() {
   };
 
   useEffect(() => {
+    const clearForm = () => {
+      setFormData(initialValues);
+      setIsSubmit(false);
+    };
+
     if (Object.keys(errors).length === 0 && isSubmit) {
       console.log('Form submitted:', formData);
       clearForm();
     }
-  }, [errors, isSubmit, formData]);
-
-  const clearForm = () => {
-    setFormData(initialValues);
-    setIsSubmit(false);
-  };
+  }, [errors, isSubmit, formData, initialValues]);
 
   return (
     <div className="contact">
@@ -93,7 +92,7 @@ function Contact() {
         </div>
 
         <div className="whatsapp">
-          <a href="https://api.whatsapp.com/send?phone=254799396000" target='_blank'>
+          <a href="https://api.whatsapp.com/send?phone=254799396000" target='_blank' rel="noreferrer">
             <img src={process.env.PUBLIC_URL + '../media/XDL-WHATSAPP.png'} alt="XOBO WhatsApp" />
             +254 799 396 000
           </a>
