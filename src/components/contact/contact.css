@@ -1,3 +1,5 @@
+/* contact.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
@@ -54,49 +56,41 @@
 }
 
 .contact-container p {
+  text-align: center;
   padding: 0 20px 10px 20px;
 }
 
-.contact-form {
+.contact-container form {
   display: grid;
-  gap: 10px;
+  gap: 15px;
 }
 
-label {
-  font-weight: bold;
-}
-
-input,
-textarea {
+.contact-container input,
+.contact-container textarea,
+.phone-input input {
   text-transform: capitalize;
   width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  resize: none;
-}
-
-input#phoneNumber > div,
-.react-tel-input {
-  width: 100%;
-  /* border: 2px solid red; */
-}
-
-input[type='email']{
-  text-transform: none;
-}
-
-input:focus,
-textarea:focus {
-  background-color: #f4f8fb;
-  border: 0.2px solid #333;
-  border-radius: 2px;
-}
-
-button {
   padding: 10px;
+  border: 1px solid #16234d;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.phone-input {
+  width: 100%;
+  border: 1px solid #16234d; /* Remove border property */
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-container input[type="submit"],
+.contact-container button {
   background-color: #16234d;
-  color: #fff;
+  color: white;
+  padding: 10px 20px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -104,18 +98,22 @@ button {
 @media only screen and (max-width: 1024px) {
   .contactDetails {
     flex-direction: column;
+    text-align: center;
   }
 
   .contactDetails div {
     margin-bottom: 10px;
   }
 
-  .contact-form {
-    grid-template-columns: 1fr;
+  .contact-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
-  .contact-container {
-    width: 90%; /* Adjust this as needed */
-    max-width: none;
+  .contact-container form {
+    grid-template-columns: 1fr;
   }
 }
