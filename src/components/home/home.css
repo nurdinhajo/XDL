@@ -272,8 +272,9 @@ button:hover {
   }
 
   .xdlIntro h3.desc {
-    font-size: 3vw;
-    text-align: left;
+    font-size: 5.3vw;
+    text-align: center;
+    word-spacing: -0.5vw;
   }
 
   .xdlIntro .description {
@@ -289,13 +290,6 @@ button:hover {
   .xdlIntro, .xdlVideo, .xdlClient {
     order: 1; /* Reorder .xdlIntro, .xdlVideo, and .xdlClient to appear on top */
   }
-
-  .xdlIntro h3.desc {
-    font-size: 4.5vw;
-    word-spacing: -0.5vw;
-    text-align: left;
-  }
-
 
   .xdlClient {
     flex-direction: column; /* Change to a column layout on smaller screens */
@@ -316,12 +310,12 @@ button:hover {
   .xdlClientDesc {
     display: block;
     visibility: visible;
-    width: 100%;
+    width: 90vw;
     background-color: whitesmoke;
   }
 
   .xdlClientDesc h2{
-    color: #16234d;
+    color: #16234d;    
     padding: 20px 0 40px 0;
   }
 
@@ -335,11 +329,16 @@ button:hover {
     color: #16234d;
     text-decoration: none;
     padding-bottom: 10px;
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .xdlClient a{
     text-decoration: none;
+  }
+
+  .xdlClientImg img {
+    height: 110vw;
+    width: 90vw;
   }
 
   .xdlClient .rightArrow {
@@ -444,5 +443,10 @@ button:hover {
   .xdlBusiness .benefit-content {
     flex: 1;
     text-align: center;
+  }
+
+  .xdlDelivered img {
+    width: 90vw;
+    height: 110vw;
   }
 }
