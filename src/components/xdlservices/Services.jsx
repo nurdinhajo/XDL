@@ -10,7 +10,10 @@ function Services() {
 
       <div className="serviceDetails">
         <div className="background-container">
-          <img src={process.env.PUBLIC_URL + '/SERVICES/XDL-SERVICES-2.png'} alt="XOBO SERVICES" />
+          <img 
+            loading='lazy'
+            src={process.env.PUBLIC_URL + '/SERVICES/XDL-SERVICES-2.png'} alt="XOBO SERVICES" 
+          />
 
 
           <div className="content">

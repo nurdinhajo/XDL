@@ -39,7 +39,8 @@ function Home() {
         </div>
 
         <div className="xdlVideo">
-        <iframe        
+        <iframe
+            loading='lazy'        
             src="https://www.youtube.com/embed/Oe0Tme-yRBU?si=1Y6TpTYw71Lano8J"
             title="YouTube video player"
             frameBorder="0"
@@ -51,7 +52,10 @@ function Home() {
 
       <div className="xdlClient">
         <div className="xdlClientImg">
-          <img src={process.env.PUBLIC_URL + '/media/XDL-CLIENT.png'} alt="XOBO Client" />
+          <img 
+            loading='lazy'
+            src={process.env.PUBLIC_URL + '/media/XDL-CLIENT.png'} alt="XOBO Client" 
+          />
 
           <div className="xdlClientDesc">
             <h2>
@@ -101,7 +105,10 @@ function Home() {
 
           <div className="xdlBenefits-1">
             <div className="benefit-icon">
-              <img src={process.env.PUBLIC_URL + '../ICONS/Fast.png'} alt="XOBO RELIABLE" />
+              <img 
+                loading='lazy'
+                src={process.env.PUBLIC_URL + '../ICONS/Fast.png'} alt="XOBO RELIABLE"
+              />
             </div>
             <div className="benefit-content">
               <h3>Fast & flexible delivery</h3>
@@ -121,7 +128,11 @@ function Home() {
 
           <div className="xdlBenefits-3">
             <div className="benefit-icon">
-              <img id='track' src={process.env.PUBLIC_URL + '../ICONS/Track.png'} alt="XOBO TRACKING" />
+              <img 
+                loading='lazy'
+                id='track' 
+                src={process.env.PUBLIC_URL + '../ICONS/Track.png'} alt="XOBO TRACKING"
+              />
             </div>
             <div className="benefit-content">
               <h3>Real-time tracking</h3>
@@ -131,7 +142,10 @@ function Home() {
 
           <div className="xdlBenefits-4">
             <div className="benefit-icon">
-              <img  src={process.env.PUBLIC_URL + '../ICONS/Vehicles.png'} alt="XOBO VEHICLE" />
+              <img 
+                loading='lazy'
+                src={process.env.PUBLIC_URL + '../ICONS/Vehicles.png'} alt="XOBO VEHICLE" 
+              />
             </div>
             <div className="benefit-content">
               <h3>Vast array of vehicles</h3>
@@ -141,7 +155,10 @@ function Home() {
       </div>
 
       <div className="xdlDelivered">
-        <img  src={process.env.PUBLIC_URL + '/media/XDL-DELIVERED.png'} alt="XOBO Client" />
+        <img 
+          loading='lazy'
+          src={process.env.PUBLIC_URL + '/media/XDL-DELIVERED.png'} alt="XOBO Client" 
+        />
       </div>
 
     </div>
