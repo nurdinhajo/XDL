@@ -16,7 +16,7 @@ function Services() {
           <div className="content">
           <h2>On-demand delivery for your business</h2>
 
-          <a href="http://18.130.30.102/xobo" target='_blank' rel="noreferrer">
+          <a href="https://app.xobo.co.ke/" target='_blank' rel="noreferrer">
 
             <button className='serviceBtn'>
               Deliver Now
