@@ -49,13 +49,17 @@
   border-radius: 10px;
 }
 
-select{
-  border-radius: 4px 4px 4px 10px;
-  border: 1.3px solid #16234d;
+/* Updated CSS for the select element */
+.contact-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #16234d;
+  border-radius: 5px;
+  box-sizing: border-box;
   background-color: transparent;
   color: #16234d;
   font-size: 15px;
-  height: 2.2vw;
+  height: 40px; /* Adjust the height as needed */
 }
 
 .contact-container h3 {
@@ -88,7 +92,7 @@ select{
 
 .phone-input {
   width: 100%;
-  border: 1px solid #16234d; /* Remove border property */
+  border: 1px solid #16234d;
   border-radius: 5px;
   margin-bottom: 5px;
 }
