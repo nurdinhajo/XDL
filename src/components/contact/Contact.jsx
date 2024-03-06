@@ -14,31 +14,26 @@ function Contact() {
     const errors = {};
     let formIsValid = true;
 
-    // Validate first name
     if (!formData.get("First Name")) {
       errors.firstName = "First name is required";
       formIsValid = false;
     }
 
-    // Validate last name
     if (!formData.get("Last Name")) {
       errors.lastName = "Last name is required";
       formIsValid = false;
     }
 
-    // Validate phone number
     if (!phone || !phone.match(/^\d{10,12}$/)) {
       errors.phone = "Phone number should be between 10 and 12 digits!";
       formIsValid = false;
     }
 
-    // Validate email
     if (!formData.get("email")) {
       errors.email = "Email is required";
       formIsValid = false;
     }
 
-    // Validate message
     if (!formData.get("message")) {
       errors.message = "Message is required";
       formIsValid = false;
@@ -52,6 +47,8 @@ function Contact() {
     event.preventDefault();
 
     const formData = new FormData(event.target);
+    const selectedOption = document.getElementById("form-selection").value;
+    formData.append("Form-Selection", selectedOption);
 
     if (validateForm(formData)) {
       setResult("Sending....");
@@ -67,7 +64,6 @@ function Contact() {
         console.log("Success", res);
         setResult("Message Sent Successfully!");
 
-        // Clear the form and reset the PhoneInput after 3 seconds
         setTimeout(() => {
           event.target.reset();
           setPhone("");
@@ -129,10 +125,20 @@ function Contact() {
           as soon as possible.
         </p>
         <form onSubmit={onSubmit}>
-        <input type="hidden" name="subject" value="New Message from XOBO Website" />
+          <input type="hidden" name="subject" value="New Message from XOBO Website" />
+
+          <select name="Form-Selection" id="form-selection">
+            <option value="Customer Care">
+              Customer Care
+            </option>
+            <option value="Delivery Partner">
+              Delivery Partner
+            </option>
+          </select>
 
           <label htmlFor="firstName">First Name:</label>
           <input
+            placeholder="First Name"
             type="text"
             name="First Name"
             style={{ borderColor: errors.firstName ? "red" : "" }}
@@ -145,6 +151,7 @@ function Contact() {
 
           <label htmlFor="lastName">Last Name:</label>
           <input
+            placeholder="Last Name"
             type="text"
             name="Last Name"
             style={{ borderColor: errors.lastName ? "red" : "" }}
@@ -179,6 +186,7 @@ function Contact() {
 
           <label htmlFor="email">Email:</label>
           <input
+            placeholder="Email ID"
             type="email"
             name="email"
             style={{ borderColor: errors.email ? "red" : "" }}
@@ -191,6 +199,7 @@ function Contact() {
 
           <label htmlFor="message">Message:</label>
           <textarea
+            placeholder="Message"
             name="message"
             style={{ borderColor: errors.message ? "red" : "" }}
           ></textarea>
@@ -199,8 +208,6 @@ function Contact() {
               {errors.message}
             </p>
           )}
-
-          
 
           <button type="submit">{result}</button>
         </form>

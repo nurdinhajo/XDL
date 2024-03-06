@@ -49,6 +49,15 @@
   border-radius: 10px;
 }
 
+select{
+  border-radius: 4px 4px 4px 10px;
+  border: 1.3px solid #16234d;
+  background-color: transparent;
+  color: #16234d;
+  font-size: 15px;
+  height: 2.2vw;
+}
+
 .contact-container h3 {
   text-align: center;
   color: #16234d;
