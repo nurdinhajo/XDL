@@ -1,92 +1,194 @@
-/* faq.css */
 * {
- padding: 0;
- margin: 0;
- font-family: "Nunito";
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito";
 }
 
 .faq-container {
- margin-top: 84px;
+  display: flex;
+  padding: 20px;
+  margin: 60px 0 0 0;
+}
+
+.faqpage {
+  margin-top: -30px;
+}
+
+.faq-data {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-content {
+  padding: 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-container h1 {
+  font-size: 4vw;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 0 0 0 25px;
+}
+
+.categories {
+  width: 13%;
+  display: block;
+  background-color: #f0f7fe;
+  padding: 15px;
+  order: 1;
+  border-radius: 10px ;
+}
+
+.categories a {
+  display: block;
+  font-size: 1.1vw;
+  padding: 3px;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.questions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  order: 3;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+  transition: width 3s;
+  transition-delay: 1s;
+  padding: 0 15vw;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-container .question {
+  padding: 15px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #16234d;
+  font-size: 1.5vw;
+  font-weight: 600;
+  transition: width 3s;
+  transition-delay: 3s;
+}
+
+.faq-container .answer {
+  padding: 15px;
+  display: none;
+  font-weight: 500;
 }
 
 .faq-container .faq-item.active .answer {
   display: block;
 }
 
-.faq-data{
- width: 100%;
- justify-content: center;
- align-items: center;
-}
-
-.faq-content {
- padding: 20px;
-}
-
-
-.faq-container h1 {
- font-size: 4vw;
- text-align: left;
- margin-bottom: 20px;
- padding: 0 0 0 25px;
-}
-
-.faq-list {
- list-style: none;
- padding: 0;
- transition: width 3s;
- transition-delay: 1s;
- align-items: center;
-}
-
 .faq-item {
- margin-bottom: 20px;
- border: 1px solid #ddd;
- border-radius: 5px;
- overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: baseline;
 }
 
-.faq-container .question {
- padding: 15px;
- background-color: #f0f0f0;
- cursor: pointer;
- color: #16234d; 
- font-size: 1.5vw;
- transition: width 3s;
- transition-delay: 3s;
+.question {
+  padding: 15px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #16234d;
+  font-size: 1vw;
+  transition: background-color 0.3s;
+  text-align: left;
+  position: relative;
 }
 
-.faq-container .answer {
- padding: 15px;
- display: none;
- font-weight: 500;
+.icon {
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
-.faq-container .faq-item.active .answer {
- display: block;
+.question:hover {
+  background-color: #ddd;
+}
+
+.answer {
+  padding: 15px;
+  display: none;
+  font-weight: 500;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-item.open .answer {
+  display: block;
 }
 
 @media only screen and (max-width: 1024px) {
- .faq-container .faq-item {
-   margin-bottom: 10px;
- }
+  .faq-container .faq-item {
+    margin-bottom: 10px;
+  }
 
- .faq-container .question,
- .faq-container .answer {
-   padding: 10px;
- }
+  .faq-container .question,
+  .faq-container .answer {
+    padding: 10px;
+  }
 
- .faq-container .question {
-  font-size: 4vw;
- }
+  .faq-container .question {
+    font-size: 4vw;
+  }
 
- .faq-container .answer {
-  font-size: 3vw;
- }
+  .faq-container .answer {
+    font-size: 3vw;
+  }
 
- .faq-container h1 {
- font-size: 7vw;
- padding: 0 0 0 10px;
-}
+  .faq-container h1 {
+    font-size: 7vw;
+    padding: 0 0 0 10px;
+  }
 
+  .categories {
+    width: 40%;
+    padding: 10px;
+    order: 2;
+    border-radius: 0;
+  }
+
+  .categories a {
+    font-size: 2.4vw;
+    margin-bottom: 5px;
+  }
+
+  .questions {
+    order: 3;
+  }
+
+  .faq-list {
+    padding: 0 5vw;
+  }
+
+  .faq-container .question {
+    font-size: 3vw;
+  }
+
+  .faq-container .answer {
+    font-size: 2.5vw;
+  }
 }
