@@ -190,8 +190,7 @@
   .faq-container .answer {
     font-size: 2.5vw;
   }
-  .icon{
-    font-size: 2px;
-    position: relative;
+  .icon {
+    display: none;
   }
 }
