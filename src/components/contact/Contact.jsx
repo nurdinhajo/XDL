@@ -134,6 +134,9 @@ function Contact() {
             <option value="Delivery Partner">
               Delivery Partner
             </option>
+            <option value="Get a Quote">
+              Get a Quote
+            </option>
           </select>
 
           <label htmlFor="firstName">First Name:</label>

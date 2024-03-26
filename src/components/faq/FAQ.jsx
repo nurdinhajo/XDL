@@ -8,11 +8,61 @@ import './faq.css'; // Make sure to adjust the path based on your project struct
 
 const FAQ = () => {
   const faqs = [
-    { id: 1, question: 'How to place an order?', answer: '...' , category: 'order' },
-    { id: 2, question: 'What are the delivery options?', answer: '...', category: 'delivery' },
-    { id: 3, question: 'How to become a delivery partner?', answer: '...', category: 'delivery partner' },
-    { id: 4, question: 'What payment methods are accepted?', answer: '...', category: 'payments' },
-    // Add more FAQs as needed
+    {
+      "id": 1,
+      "question": "How to place an order?",
+      "answer": "You can easily place orders through our app available on the Play Store, App Store, or our web app in just three simple steps. First, create an account, whether it's personal or for your business (Step 1). Then, enter your pick-up location and drop location(s). You can even add extra drop locations if needed. Next, you have the option to choose instant delivery or schedule it for a later date and time at your convenience (Step 2). Finally, provide details such as package/cargo information, receiver details, and any additional notes (Step 3). Review the ride amount for the entire delivery and confirm your order.",
+      "category": "order"
+    },
+
+    {
+      "id": 2,
+      "question": "Can I request a specific type of vehicle for my delivery?",
+      "answer": "Absolutely! We understand that every delivery is unique, and we're committed to accommodating your preferences. If you have a specific vehicle requirement or preference based on the size or nature of your shipment, simply let us know during the ordering process, and we'll do our best to fulfill your request.",
+      "category": "order"
+    },
+
+      {
+      "id": 3,
+      "question": "Can I track the status of my delivery based on the vehicle type?",
+      "answer": "Yes, our advanced tracking system provides real-time updates on the status and location of your delivery, including details about the vehicle assigned to your shipment. Whether it's a motorbike zipping through city streets or a heavy-duty lorry navigating highways, you can monitor the progress of your delivery every step of the way.",
+      "category": "delivery"
+    },
+
+    {
+      "id": 4,
+      "question": "How can I Modify or cancel order?",
+      "answer": "After placing an order, you can manage it through the \"My Orders\" section in your settings. Here, you can modify or cancel ongoing orders, and you'll be prompted to provide a reason for cancellation. Your feedback will be received by our representatives and appropriate action will be taken.",
+      "category": "delivery"
+    },
+
+    { 
+      "id": 5, "question": 'How do I Submit Ride Feedback', "answer": 'Upon completing, modifying, or canceling an order, our app will prompt you to provide feedback. Your feedback is valuable to us and will be reviewed by our representatives for further action.', "category": 'delivery' 
+    },
+
+    { 
+      "id": 6, "question": 'How can I receive confirmation receipts for my order?', "answer": 'Upon successfully completing an order, a confirmation email will be sent directly to the email address registered on our platform. This email will contain details of the locations inputted on the platform, the information provided, and the ride amount.', "category": 'delivery' 
+    },
+    
+    { 
+      "id": 7, "question": 'Is my Ride insured in case of anything?', "answer": 'Rest assured, all goods delivered through XOBO are insured, providing coverage in case of any damages during transit.', "category": 'delivery' 
+    },
+
+    { 
+      "id": 8, "question": ' What types of vehicles do you use for delivery?', "answer": 'We utilize a diverse fleet of vehicles to cater to a wide range of delivery needs. Whether it\'s small parcels or large freight, we have the right vehicle for the job. Our fleet includes motorbikes, minivans, vans, pickups, 3-tonne lorries, 5-tonne lorries, 7-tonne lorries, 10-tonne lorries, and 14-tonne lorries. Stay tuned for the launch of our 28-tonne lorries in the near future, further expanding our capabilities to serve you better.', "category": 'delivery' 
+    },
+    
+    { 
+      "id": 9, "question": 'What types of goods do you deliver?', "answer": 'From everyday essentials to specialty items, we deliver a diverse range of goods to cater to all your needs. In addition to alcoholic beverages, we may have restrictions on the delivery of certain other items based on legal, safety, or ethical considerations. Our goal is to ensure the integrity of our delivery services while upholding the highest standards of customer satisfaction and regulatory compliance.', "category": 'order' 
+    },
+
+    {
+      "id": 10,
+      "question": "How can I make payments?",
+      "answer": "You have multiple options for making payments. Firstly, you can load your virtual wallet by navigating to Settings -> Wallet in the app. Here, you can input your phone number (preferably Mpesa number) and specify the amount you want to add to your wallet. Once confirmed, the specified amount will be deducted directly from your account and credited to your wallet. Alternatively, you can opt for payment on delivery, allowing you to pay when you receive the delivery.",
+      "category": "payments"
+    },
+    
   ];
 
   return (
