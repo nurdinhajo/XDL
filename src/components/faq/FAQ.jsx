@@ -4,7 +4,7 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import FAQPage from './FAQPage';
 
-import './faq.css'; // Make sure to adjust the path based on your project structure
+import './faq.css'; 
 
 const FAQ = () => {
   const faqs = [

@@ -112,7 +112,6 @@
   background-color: #f0f0f0;
   cursor: pointer;
   color: #16234d;
-  font-size: 1vw;
   transition: background-color 0.3s;
   text-align: left;
   position: relative;
@@ -133,7 +132,7 @@
 .answer {
   padding: 15px;
   display: none;
-  font-weight: 500;
+  font-weight: 100;
   transition: max-height 0.3s ease-out;
 }
 
