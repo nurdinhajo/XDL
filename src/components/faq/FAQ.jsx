@@ -17,8 +17,8 @@ const FAQ = () => {
 
     {
       "id": 2,
-      "question": "Can I request a specific type of vehicle for my delivery?",
-      "answer": "Absolutely! We understand that every delivery is unique, and we're committed to accommodating your preferences. If you have a specific vehicle requirement or preference based on the size or nature of your shipment, simply let us know during the ordering process, and we'll do our best to fulfill your request.",
+      "question": "Can I choose a specific type of vehicle for my delivery?",
+      "answer": "Certainly! We've made it convenient for you to select the type of vehicle you prefer for your delivery right within our app. After inserting the pick-up and drop-off locations, you'll have the option to choose from a range of vehicle types based on your needs. Whether you require a motorbike for quick deliveries or a larger vehicle for bulk shipments, simply select your preferred vehicle type during the ordering process, and we'll ensure your delivery is handled accordingly.",
       "category": "order"
     },
 
