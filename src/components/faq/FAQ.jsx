@@ -49,7 +49,7 @@ const FAQ = () => {
     },
 
     { 
-      "id": 8, "question": ' What types of vehicles do you use for delivery?', "answer": 'We utilize a diverse fleet of vehicles to cater to a wide range of delivery needs. Whether it\'s small parcels or large freight, we have the right vehicle for the job. Our fleet includes motorbikes, minivans, vans, pickups, 3-tonne lorries, 5-tonne lorries, 7-tonne lorries, 10-tonne lorries, and 14-tonne lorries. Stay tuned for the launch of our 28-tonne lorries in the near future, further expanding our capabilities to serve you better.', "category": 'delivery' 
+      "id": 8, "question": ' What types of vehicles do you use for delivery?', "answer": 'We utilize a diverse fleet of vehicles to cater to a wide range of delivery needs. Whether it\'s small parcels or large freight, we have the right vehicle for the job. Our fleet includes motorbikes, minivans, vans, pickups, 3-tonne lorries, 5-tonne lorries, 7-tonne lorries, 10-tonne lorries, and 14-tonne lorries. ', "category": 'delivery' 
     },
     
     { 
