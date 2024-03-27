@@ -1,5 +1,5 @@
 // FAQ.jsx
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import FAQPage from './FAQPage';
@@ -53,7 +53,7 @@ const FAQ = () => {
     },
     
     { 
-      "id": 9, "question": 'What types of goods do you deliver?', "answer": 'From everyday essentials to specialty items, we deliver a diverse range of goods to cater to all your needs. In addition to alcoholic beverages, we may have restrictions on the delivery of certain other items based on legal, safety, or ethical considerations. Our goal is to ensure the integrity of our delivery services while upholding the highest standards of customer satisfaction and regulatory compliance.', "category": 'order' 
+      "id": 9, "question": 'What types of goods do you deliver?', "answer": 'From everyday essentials to specialty items, we deliver a diverse range of goods to cater to all your needs. With exemption to alcoholic beverages, we may have restrictions on the delivery of certain other items based on legal, safety, or ethical considerations. Our goal is to ensure the integrity of our delivery services while upholding the highest standards of customer satisfaction and regulatory compliance.', "category": 'order' 
     },
 
     {
