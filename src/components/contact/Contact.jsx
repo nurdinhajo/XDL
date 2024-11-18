@@ -89,7 +89,7 @@ function Contact() {
               src={process.env.PUBLIC_URL + "../media/XDL-CALL.png"}
               alt="XOBO Call"
             />
-            +254 799 396 000
+            +254 799 / 739 396 000
           </a>
         </div>
 
@@ -113,7 +113,7 @@ function Contact() {
               src={process.env.PUBLIC_URL + "../media/XDL-WHATSAPP.png"}
               alt="XOBO WhatsApp"
             />
-            +254 799 396 000
+            +254 799 / 739 396 000
           </a>
         </div>
       </div>
